@@ -4,6 +4,7 @@ import random
 from closest_hospital import n_closest_geodetic
 from utils import convert_crs_shap
 import pandas as pd
+pd.options.mode.chained_assignment = None
 import geopandas as gpd
 import json
 import time
@@ -86,7 +87,7 @@ def mapbox_matrix_API(origins, destinations,token,epsg,mode=1,name='poi',destina
             if destination_id_col != False:
                 queued_origins.loc[[d_name[i]], ['m_'+o_type]] = h_batch.iloc[h_min[i]][destination_id_col]
             queued_origins.loc[[d_name[i]], ['so_'+o_type]]=response['sources'][i]['distance']
-        time.sleep(0.8)
+        time.sleep(0.5)
 
 
     print("\n")

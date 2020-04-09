@@ -4,6 +4,7 @@ from rasterio.windows import Window
 from matplotlib import pyplot
 from pyproj import Proj, transform
 from shapely.geometry import Point
+from pyproj import Transformer
 import geopandas as gpd
 import shapely
 
@@ -13,7 +14,7 @@ def remove_duplicated_geom(gdf):
     """
     gdf["geometry"] = gdf["geometry"].apply(lambda geom: geom.wkb)
     gdf = gdf.drop_duplicates(["geometry"])
-    gdf["geometry"] = gdf["geometry"].apply(lambda geom: shapely.wkb.loads(geom))
+    gdf.loc[gdf.index,"geometry"] = gdf["geometry"].apply(lambda geom: shapely.wkb.loads(geom))
     return gdf
 
 def get_pop(map_file,left_x,top_y,window,plot=False):
@@ -63,23 +64,16 @@ def get_pop(map_file,left_x,top_y,window,plot=False):
          'split': split}
     return out
     
-def convert_crs_shap(long,lat,epsg):
-    original = Proj(init='EPSG:%s'%epsg) # EPSG:4326 in your case
-    destination = Proj(init='EPSG:4326') # your new EPSG
-    x,y = transform(original, destination,long,lat)
-    return [str(x),str(y)]
-
-def convert_crs_shap2(point,epsg_ini,epsg_final):
+def convert_crs_shap(lat,long,epsg):
     """
     convert_crs_shap2(point,epsg_ini,epsg_final)
     Given a shapely Point, change the projection of the Point 
     based on an initial epsg and a final one
     """
-    original = Proj(init='EPSG:%s'%epsg_ini) # EPSG:4326 in your case
-    destination = Proj(init='EPSG:%s'%epsg_final) # your new EPSG
-    long,lat = point.x, point.y
-    x,y = transform(original, destination,long,lat)
-    return Point(x,y)
+    transformer = Transformer.from_crs("epsg:%s"%epsg, "epsg:4326")
+    y,x = transformer.transform(lat,long)
+    return [str(x),str(y)]
+
 
 def convert_crs_gdf(gdf,epsg_ini,epsg_final):
     """
