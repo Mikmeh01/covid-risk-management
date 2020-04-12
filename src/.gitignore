@@ -2,7 +2,7 @@
 !.gitignore
 !__init__.py
 !config.json
-!make_dataframe.py
+!make_geodataframe.py
 !make_vis.py
 !utils
 !geo.py
