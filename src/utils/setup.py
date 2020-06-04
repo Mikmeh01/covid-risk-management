@@ -88,7 +88,7 @@ def setup_country_directories(country_name):
             r = requests.get(url_hospital, stream=True)
             z = zipfile.ZipFile(io.BytesIO(r.content))
             z.extractall(hospitals_path)
-            hospital_shp_path = os.path.join(hospitals_path, '%s.shp' % country_name)
+            hospital_shp_path = os.path.join(hospitals_path, '%s-node.shp' % country_name)
             hospitals = gpd.read_file(hospital_shp_path)
 
             hospitals = hospitals[(hospitals.healthcare.isin(['clinic', 'hospital'])) | (hospitals.amenity.isin(['clinic', 'hospital']))]
