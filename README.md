@@ -33,4 +33,4 @@ _dependencies and how to install them_
 
 ## References
 
-_Inspired from this [work](https://github.com/datapartnership/covid19/blob/master/accessibility-Spain.ipynb)
+_Inspired from this [work](https://github.com/datapartnership/covid19/blob/master/accessibility-Spain.ipynb)_ 
