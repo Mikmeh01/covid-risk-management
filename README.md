@@ -37,5 +37,5 @@ _dependencies and how to install them_
 _Inspired from this [work](https://github.com/datapartnership/covid19/blob/master/accessibility-Spain.ipynb)_
 
 Datasets:
-- Hospitals: OpenStreetMap or Harvard Sub-Saharan Public Hospitals Geo-coded database [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JTL9VY)\
+- Hospitals: OpenStreetMap or Harvard Sub-Saharan Public Hospitals Geo-coded database [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JTL9VY)
 - Time to Nearest Hospital: MAPBOX Routing API
