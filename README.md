@@ -30,7 +30,7 @@ _Deeper presentation of project motivation, organization and main functionalitie
 
 ## Installation
 
-_dependencies and how to install them_
+_Requirements file_
 
 ## References
 
@@ -39,4 +39,4 @@ _Inspired from this [work](https://github.com/datapartnership/covid19/blob/maste
 Datasets:
 - Hospitals: OpenStreetMap or Harvard Sub-Saharan Public Hospitals Geo-coded database [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JTL9VY)
 - Population: WorldPop Database [link](https://www.worldpop.org/)
-- Time to Nearest Hospital: MAPBOX Routing API
+- Time to Nearest Hospital: MAPBOX Routing API [MAPBOX](https://www.mapbox.com/)
