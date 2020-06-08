@@ -23,11 +23,6 @@ and then run from `src` directory
 $ python make_geodataframe.py --config=path_to_config --o=output_name
 ```
 
-## Overview
-
-_Deeper presentation of project motivation, organization and main functionalities presentation (links for more details over functionalities in [wiki](https://github.com/shahineb/covid-risk-management/wiki))_
-
-
 ## Installation
 
 _Requirements file_
