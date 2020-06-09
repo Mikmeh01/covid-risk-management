@@ -23,8 +23,16 @@ $ python make_geodataframe.py --config=path_to_config --o=output_name
 
 Here is an example of interactive map for Tunisia that can be generated [link](https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html)
 ## Installation
+Code implemented in Python 3.6
 
-_Requirements file_
+### Setting up environment
+
+Clone and go to repository
+
+``` $ git clone https://github.com/Mikmeh01/covid-risk-management.git
+$ cd covid-risk-management
+```
+
 
 ## References
 
