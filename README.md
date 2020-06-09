@@ -6,8 +6,6 @@ The purpose of this project is to help policymakers quickly identify areas with 
 
 ## Getting Started
 
-_provide very short code sample and result to give a grasp of what the project is about and what's achievable with the code (ideally some quick map visualization)_
-
 Setup a configuration json file to suit the geodataframe you wish to generate, for example :
 
 ```json
@@ -23,6 +21,7 @@ and then run from `src` directory
 $ python make_geodataframe.py --config=path_to_config --o=output_name
 ```
 
+Here is an example of interactive map for Tunisia that can be generated [link](https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html)
 ## Installation
 
 _Requirements file_
@@ -39,8 +38,6 @@ Datasets:
 ## Vizualisation
 
 To get a grasp of estimated time arrival to hospitals and their location, choose the country and run the "make_viz" notebook and choose the map that suits best your work
-
-Here is an example for Tunisia ( Follow this [link](https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html) to get an interactive map)
 
 <p align="center">
 <img src="https://github.com/Mikmeh01/covid-risk-management/blob/master/Viz_Tunisia.png" width="500"/>
