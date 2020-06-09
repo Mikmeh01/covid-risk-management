@@ -34,6 +34,11 @@ $ git clone https://github.com/Mikmeh01/covid-risk-management.git
 $ cd covid-risk-management
 ```
 
+Create, activate environment and Install dependancies
+
+``` 
+$ (new_env) pip install -r requirements.txt
+```
 
 ## References
 
