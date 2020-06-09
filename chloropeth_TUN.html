@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0c2870fe24584d31be56a8cab886a2cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0c2870fe24584d31be56a8cab886a2cc" ></div>
+        
+</body>
+<script>    
+    
+            var map_0c2870fe24584d31be56a8cab886a2cc = L.map(
+                "map_0c2870fe24584d31be56a8cab886a2cc",
+                {
+                    center: [34.143333398353654, 9.625209273446535],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4cbb12533a08483eafa309f7dd7af103 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0c2870fe24584d31be56a8cab886a2cc);
+        
+    
+            var marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34 = L.markerClusterGroup(
+                {}
+            );
+            map_0c2870fe24584d31be56a8cab886a2cc.addLayer(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var marker_128664da4db04849b7da032f6a5bf0fe = L.marker(
+                [36.84066825999011, 10.245037682477374],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_c2ee51def948451d90fbdf055fc10c22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_128664da4db04849b7da032f6a5bf0fe.setIcon(icon_c2ee51def948451d90fbdf055fc10c22);
+        
+    
+        var popup_97fc3326e37a41ab994c87838d29c0cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a2d8b20c6674bb6ac785dfa50d2fcdd = $(`<div id="html_6a2d8b20c6674bb6ac785dfa50d2fcdd" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_97fc3326e37a41ab994c87838d29c0cb.setContent(html_6a2d8b20c6674bb6ac785dfa50d2fcdd);
+        
+
+        marker_128664da4db04849b7da032f6a5bf0fe.bindPopup(popup_97fc3326e37a41ab994c87838d29c0cb)
+        ;
+
+        
+    
+    
+            var marker_a075a7eea477411b8f814f50aeaa7e18 = L.marker(
+                [36.78549597491207, 10.178220922234544],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_2e4418689f7948b1bcbd136a1068d608 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a075a7eea477411b8f814f50aeaa7e18.setIcon(icon_2e4418689f7948b1bcbd136a1068d608);
+        
+    
+        var popup_ea837f46919f4abea5e502b00189a4a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df939e46ba1f4921ab736d44e8288bd9 = $(`<div id="html_df939e46ba1f4921ab736d44e8288bd9" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ea837f46919f4abea5e502b00189a4a6.setContent(html_df939e46ba1f4921ab736d44e8288bd9);
+        
+
+        marker_a075a7eea477411b8f814f50aeaa7e18.bindPopup(popup_ea837f46919f4abea5e502b00189a4a6)
+        ;
+
+        
+    
+    
+            var marker_8b602e5e60284e7e84f9ea8aafd7e6a0 = L.marker(
+                [35.837722164212664, 10.589130398090049],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_2a186638e7ba4b768607161c7ed9c8ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8b602e5e60284e7e84f9ea8aafd7e6a0.setIcon(icon_2a186638e7ba4b768607161c7ed9c8ec);
+        
+    
+        var popup_dd9c2a0c08bb465ea2c4a0242eea47f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a15cb054b4b404a83df23a31ab74fad = $(`<div id="html_2a15cb054b4b404a83df23a31ab74fad" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_dd9c2a0c08bb465ea2c4a0242eea47f9.setContent(html_2a15cb054b4b404a83df23a31ab74fad);
+        
+
+        marker_8b602e5e60284e7e84f9ea8aafd7e6a0.bindPopup(popup_dd9c2a0c08bb465ea2c4a0242eea47f9)
+        ;
+
+        
+    
+    
+            var marker_a72ba3e9906549e994b3b5afa2391a28 = L.marker(
+                [35.02405084148151, 9.465209718732808],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_7364d56536b34a89902241cd3091107a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a72ba3e9906549e994b3b5afa2391a28.setIcon(icon_7364d56536b34a89902241cd3091107a);
+        
+    
+        var popup_03a2b61bf3f54bdfbf9d719abe6901a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2071a46d8975417a818786ae926596b4 = $(`<div id="html_2071a46d8975417a818786ae926596b4" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_03a2b61bf3f54bdfbf9d719abe6901a5.setContent(html_2071a46d8975417a818786ae926596b4);
+        
+
+        marker_a72ba3e9906549e994b3b5afa2391a28.bindPopup(popup_03a2b61bf3f54bdfbf9d719abe6901a5)
+        ;
+
+        
+    
+    
+            var marker_9dd9625cfdcc4629933f18d6e8e11928 = L.marker(
+                [33.88380246619937, 10.11265029953654],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_64bcd7b2b1354bceaa887475441513d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9dd9625cfdcc4629933f18d6e8e11928.setIcon(icon_64bcd7b2b1354bceaa887475441513d3);
+        
+    
+        var popup_d8eaee1e234f47dc999efd1dc8e956b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a090b4b59be54fb3a50682916555905b = $(`<div id="html_a090b4b59be54fb3a50682916555905b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_d8eaee1e234f47dc999efd1dc8e956b4.setContent(html_a090b4b59be54fb3a50682916555905b);
+        
+
+        marker_9dd9625cfdcc4629933f18d6e8e11928.bindPopup(popup_d8eaee1e234f47dc999efd1dc8e956b4)
+        ;
+
+        
+    
+    
+            var marker_757880edf21946fc932d57fdd9134ace = L.marker(
+                [35.760727678041405, 10.728962419791543],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_ec658c89900140e390164d4034571d4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_757880edf21946fc932d57fdd9134ace.setIcon(icon_ec658c89900140e390164d4034571d4b);
+        
+    
+        var popup_bf682776238b430ea6cf8ab00bacd508 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_829a6d504aeb4e38ac1684133ed06cc1 = $(`<div id="html_829a6d504aeb4e38ac1684133ed06cc1" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_bf682776238b430ea6cf8ab00bacd508.setContent(html_829a6d504aeb4e38ac1684133ed06cc1);
+        
+
+        marker_757880edf21946fc932d57fdd9134ace.bindPopup(popup_bf682776238b430ea6cf8ab00bacd508)
+        ;
+
+        
+    
+    
+            var marker_e302aefe909248929fd849ffe13a17db = L.marker(
+                [34.420204119988085, 8.787544665637654],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_36e87f98aa9c466d950cd3628a36d49f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e302aefe909248929fd849ffe13a17db.setIcon(icon_36e87f98aa9c466d950cd3628a36d49f);
+        
+    
+        var popup_afc291eea61a4a0c9f80c3732817c150 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3037c4d9d05b4e98b2cda0aea0237e15 = $(`<div id="html_3037c4d9d05b4e98b2cda0aea0237e15" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_afc291eea61a4a0c9f80c3732817c150.setContent(html_3037c4d9d05b4e98b2cda0aea0237e15);
+        
+
+        marker_e302aefe909248929fd849ffe13a17db.bindPopup(popup_afc291eea61a4a0c9f80c3732817c150)
+        ;
+
+        
+    
+    
+            var marker_ebaa3b94fb9e4f15b8e9698b35328144 = L.marker(
+                [34.42608679109233, 8.75444905623317],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f8d39e28997047f09eb0b94512a88543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ebaa3b94fb9e4f15b8e9698b35328144.setIcon(icon_f8d39e28997047f09eb0b94512a88543);
+        
+    
+        var popup_ac034a3c36df491a875d0b925613937a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9bf3dc874b8a4047a7cbff81e03e4418 = $(`<div id="html_9bf3dc874b8a4047a7cbff81e03e4418" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ac034a3c36df491a875d0b925613937a.setContent(html_9bf3dc874b8a4047a7cbff81e03e4418);
+        
+
+        marker_ebaa3b94fb9e4f15b8e9698b35328144.bindPopup(popup_ac034a3c36df491a875d0b925613937a)
+        ;
+
+        
+    
+    
+            var marker_f0e4bcde110d4173b2b32ff3072c959e = L.marker(
+                [34.42088573635414, 8.793313594315862],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_03e7087542a74e889685dc1c66023941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f0e4bcde110d4173b2b32ff3072c959e.setIcon(icon_03e7087542a74e889685dc1c66023941);
+        
+    
+        var popup_a88294062615445e8ca1d69ec47a0b16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f78c66c4e2a34b12af736da6a24db729 = $(`<div id="html_f78c66c4e2a34b12af736da6a24db729" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_a88294062615445e8ca1d69ec47a0b16.setContent(html_f78c66c4e2a34b12af736da6a24db729);
+        
+
+        marker_f0e4bcde110d4173b2b32ff3072c959e.bindPopup(popup_a88294062615445e8ca1d69ec47a0b16)
+        ;
+
+        
+    
+    
+            var marker_fa7d33319f384e6ca05b84b4f137e66f = L.marker(
+                [34.53179013382322, 10.49643493089414],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_613bc3fe7299411d8c4fd2dc8f5e55c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa7d33319f384e6ca05b84b4f137e66f.setIcon(icon_613bc3fe7299411d8c4fd2dc8f5e55c7);
+        
+    
+        var popup_c3ac29afda8f428ca07283e18b79385e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_02d7cdd255754b0a852218579666e682 = $(`<div id="html_02d7cdd255754b0a852218579666e682" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_c3ac29afda8f428ca07283e18b79385e.setContent(html_02d7cdd255754b0a852218579666e682);
+        
+
+        marker_fa7d33319f384e6ca05b84b4f137e66f.bindPopup(popup_c3ac29afda8f428ca07283e18b79385e)
+        ;
+
+        
+    
+    
+            var marker_179f0c0898484952903caa69f54a38c7 = L.marker(
+                [34.420139998428795, 8.794608095441987],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_8f4d5c04dce64a9cbd4929435478ee02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_179f0c0898484952903caa69f54a38c7.setIcon(icon_8f4d5c04dce64a9cbd4929435478ee02);
+        
+    
+        var popup_f3542a24ac1e4a4fac72356fdc5cbb83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec5fe572933f45309e517f55090607c4 = $(`<div id="html_ec5fe572933f45309e517f55090607c4" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_f3542a24ac1e4a4fac72356fdc5cbb83.setContent(html_ec5fe572933f45309e517f55090607c4);
+        
+
+        marker_179f0c0898484952903caa69f54a38c7.bindPopup(popup_f3542a24ac1e4a4fac72356fdc5cbb83)
+        ;
+
+        
+    
+    
+            var marker_2e93e6b55fea49dd941997e5d82889af = L.marker(
+                [34.41995827876801, 8.794617147897412],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_2b10ebcf1cf64d80b4a575f89bbd7e80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2e93e6b55fea49dd941997e5d82889af.setIcon(icon_2b10ebcf1cf64d80b4a575f89bbd7e80);
+        
+    
+        var popup_fdced09098434c6380501366654d335c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_124e83d7ec274a2181bb4018c2722390 = $(`<div id="html_124e83d7ec274a2181bb4018c2722390" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_fdced09098434c6380501366654d335c.setContent(html_124e83d7ec274a2181bb4018c2722390);
+        
+
+        marker_2e93e6b55fea49dd941997e5d82889af.bindPopup(popup_fdced09098434c6380501366654d335c)
+        ;
+
+        
+    
+    
+            var marker_64c44b6fb75e45d89cfa74df4efdf1af = L.marker(
+                [33.884266320721, 10.105546049863761],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b4b945f666d145c4aebd70e7cb408840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_64c44b6fb75e45d89cfa74df4efdf1af.setIcon(icon_b4b945f666d145c4aebd70e7cb408840);
+        
+    
+        var popup_b86f7cc03aea48bb9fbdf0aafad164d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25c0c4f28d6c489988b5426915355ebd = $(`<div id="html_25c0c4f28d6c489988b5426915355ebd" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_b86f7cc03aea48bb9fbdf0aafad164d7.setContent(html_25c0c4f28d6c489988b5426915355ebd);
+        
+
+        marker_64c44b6fb75e45d89cfa74df4efdf1af.bindPopup(popup_b86f7cc03aea48bb9fbdf0aafad164d7)
+        ;
+
+        
+    
+    
+            var marker_1436f51f84434c4fb8a09376dbe2f16f = L.marker(
+                [35.64021225511746, 10.896309547402666],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_a71c7fb5c81d4f6ba4725906bf25b67e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1436f51f84434c4fb8a09376dbe2f16f.setIcon(icon_a71c7fb5c81d4f6ba4725906bf25b67e);
+        
+    
+        var popup_0450b4653c454e6fa467f1e13f946137 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_649e1a3652e64a669b8846fe6ea2640d = $(`<div id="html_649e1a3652e64a669b8846fe6ea2640d" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_0450b4653c454e6fa467f1e13f946137.setContent(html_649e1a3652e64a669b8846fe6ea2640d);
+        
+
+        marker_1436f51f84434c4fb8a09376dbe2f16f.bindPopup(popup_0450b4653c454e6fa467f1e13f946137)
+        ;
+
+        
+    
+    
+            var marker_cc609dbbe02f4f9fa7d32b4093e03a00 = L.marker(
+                [35.83943408411682, 10.62223908326348],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_925fe69e3af34c85bffb57645e29e9e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cc609dbbe02f4f9fa7d32b4093e03a00.setIcon(icon_925fe69e3af34c85bffb57645e29e9e1);
+        
+    
+        var popup_15d37ffcab6f4c80b9711133faf16769 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41a573fe1a6247f7a74dbb42c995141e = $(`<div id="html_41a573fe1a6247f7a74dbb42c995141e" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_15d37ffcab6f4c80b9711133faf16769.setContent(html_41a573fe1a6247f7a74dbb42c995141e);
+        
+
+        marker_cc609dbbe02f4f9fa7d32b4093e03a00.bindPopup(popup_15d37ffcab6f4c80b9711133faf16769)
+        ;
+
+        
+    
+    
+            var marker_7f0c0193a82242019f3a2cd5b8f58877 = L.marker(
+                [35.650008855908595, 10.890080787516382],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_d664789610f04c01a1ee9727d4e68480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7f0c0193a82242019f3a2cd5b8f58877.setIcon(icon_d664789610f04c01a1ee9727d4e68480);
+        
+    
+        var popup_ef9637bd24334c0a972fba3d15970937 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94131ad98336435891e52340cdf1b537 = $(`<div id="html_94131ad98336435891e52340cdf1b537" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ef9637bd24334c0a972fba3d15970937.setContent(html_94131ad98336435891e52340cdf1b537);
+        
+
+        marker_7f0c0193a82242019f3a2cd5b8f58877.bindPopup(popup_ef9637bd24334c0a972fba3d15970937)
+        ;
+
+        
+    
+    
+            var marker_ef3013ec31df43e1a1bd680790402406 = L.marker(
+                [36.84508233783936, 10.284068517519046],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_3604b45bd13b47369d43d6ea76828991 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ef3013ec31df43e1a1bd680790402406.setIcon(icon_3604b45bd13b47369d43d6ea76828991);
+        
+    
+        var popup_f65b6417d5394bd18a7a713d8b55672e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee1e60031bd34e128eef174eda80fb8a = $(`<div id="html_ee1e60031bd34e128eef174eda80fb8a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_f65b6417d5394bd18a7a713d8b55672e.setContent(html_ee1e60031bd34e128eef174eda80fb8a);
+        
+
+        marker_ef3013ec31df43e1a1bd680790402406.bindPopup(popup_f65b6417d5394bd18a7a713d8b55672e)
+        ;
+
+        
+    
+    
+            var marker_33fedc2772954bbfaaec85cebbe3b778 = L.marker(
+                [36.82612431687954, 10.193500880262775],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_1c1b9e5252784e1a8a27a5c0b3ba1432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_33fedc2772954bbfaaec85cebbe3b778.setIcon(icon_1c1b9e5252784e1a8a27a5c0b3ba1432);
+        
+    
+        var popup_644e4eebf80b4be6bd01357daa1093f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f55d718a045147f88aaf88576b481746 = $(`<div id="html_f55d718a045147f88aaf88576b481746" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_644e4eebf80b4be6bd01357daa1093f4.setContent(html_f55d718a045147f88aaf88576b481746);
+        
+
+        marker_33fedc2772954bbfaaec85cebbe3b778.bindPopup(popup_644e4eebf80b4be6bd01357daa1093f4)
+        ;
+
+        
+    
+    
+            var marker_d492a3b03c764dff9a72b4dcef9556f1 = L.marker(
+                [36.837530494537106, 10.238654192658487],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_0cd75d30f4d34983b21e592b0e58110d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d492a3b03c764dff9a72b4dcef9556f1.setIcon(icon_0cd75d30f4d34983b21e592b0e58110d);
+        
+    
+        var popup_107b78819b414d31843dd30be316e83a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58c017ef147141fea86dafe753b3b4fc = $(`<div id="html_58c017ef147141fea86dafe753b3b4fc" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_107b78819b414d31843dd30be316e83a.setContent(html_58c017ef147141fea86dafe753b3b4fc);
+        
+
+        marker_d492a3b03c764dff9a72b4dcef9556f1.bindPopup(popup_107b78819b414d31843dd30be316e83a)
+        ;
+
+        
+    
+    
+            var marker_5397ec8489bd437d96b4a225551e9a63 = L.marker(
+                [36.84555138914095, 10.28466623103435],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_9da9b080136345169dbe5a4d8f512397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5397ec8489bd437d96b4a225551e9a63.setIcon(icon_9da9b080136345169dbe5a4d8f512397);
+        
+    
+        var popup_701e67669f174f5ba232a953fb826df9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc2a0e414bbf4d90a8dcdad2ca88eba3 = $(`<div id="html_fc2a0e414bbf4d90a8dcdad2ca88eba3" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_701e67669f174f5ba232a953fb826df9.setContent(html_fc2a0e414bbf4d90a8dcdad2ca88eba3);
+        
+
+        marker_5397ec8489bd437d96b4a225551e9a63.bindPopup(popup_701e67669f174f5ba232a953fb826df9)
+        ;
+
+        
+    
+    
+            var marker_8c226be1eea9406fad3ef620b568a7bb = L.marker(
+                [36.8257628892147, 10.194007398671545],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_d8b5dca6905444e698a27507151de4d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8c226be1eea9406fad3ef620b568a7bb.setIcon(icon_d8b5dca6905444e698a27507151de4d0);
+        
+    
+        var popup_31ac4e90a3c64e3b8e6985ffbe45e1f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fc637a052b7413096fa6e49d1fe9d85 = $(`<div id="html_9fc637a052b7413096fa6e49d1fe9d85" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_31ac4e90a3c64e3b8e6985ffbe45e1f7.setContent(html_9fc637a052b7413096fa6e49d1fe9d85);
+        
+
+        marker_8c226be1eea9406fad3ef620b568a7bb.bindPopup(popup_31ac4e90a3c64e3b8e6985ffbe45e1f7)
+        ;
+
+        
+    
+    
+            var marker_ec3712ef83234f289db3526e02189010 = L.marker(
+                [36.758776227794556, 10.01911085851009],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_4e0e2a71f3f2415a81700b9c42758672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ec3712ef83234f289db3526e02189010.setIcon(icon_4e0e2a71f3f2415a81700b9c42758672);
+        
+    
+        var popup_20be99dce64046bea1cc6d1e56bded20 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb10e69cc95f4896b8d7c554fad38080 = $(`<div id="html_eb10e69cc95f4896b8d7c554fad38080" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_20be99dce64046bea1cc6d1e56bded20.setContent(html_eb10e69cc95f4896b8d7c554fad38080);
+        
+
+        marker_ec3712ef83234f289db3526e02189010.bindPopup(popup_20be99dce64046bea1cc6d1e56bded20)
+        ;
+
+        
+    
+    
+            var marker_d361e0cb6b0044fe905970dac7e6afb0 = L.marker(
+                [33.50073976816208, 11.104747278941318],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f9bdbdf7811f435c9552759fd9fc5596 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d361e0cb6b0044fe905970dac7e6afb0.setIcon(icon_f9bdbdf7811f435c9552759fd9fc5596);
+        
+    
+        var popup_a6ad2313304345b285a2fa056e991dbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a73388fd84504bddb833d699d912994b = $(`<div id="html_a73388fd84504bddb833d699d912994b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_a6ad2313304345b285a2fa056e991dbb.setContent(html_a73388fd84504bddb833d699d912994b);
+        
+
+        marker_d361e0cb6b0044fe905970dac7e6afb0.bindPopup(popup_a6ad2313304345b285a2fa056e991dbb)
+        ;
+
+        
+    
+    
+            var marker_5a79f8986c994a02aabac6e7fb8ed255 = L.marker(
+                [36.866725669118836, 10.28958439654042],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_7bdea9920d3240818144c4745ed48647 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5a79f8986c994a02aabac6e7fb8ed255.setIcon(icon_7bdea9920d3240818144c4745ed48647);
+        
+    
+        var popup_d5362a5ca9a349989dd1651a8a3b161e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9104f32c34db4691b8ec1db3d4e06c6b = $(`<div id="html_9104f32c34db4691b8ec1db3d4e06c6b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_d5362a5ca9a349989dd1651a8a3b161e.setContent(html_9104f32c34db4691b8ec1db3d4e06c6b);
+        
+
+        marker_5a79f8986c994a02aabac6e7fb8ed255.bindPopup(popup_d5362a5ca9a349989dd1651a8a3b161e)
+        ;
+
+        
+    
+    
+            var marker_abff830e60fb401ca816aa39882790f0 = L.marker(
+                [33.47511352413261, 9.021899241788816],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f57ae9af8045454987b7d54f45e7bb30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_abff830e60fb401ca816aa39882790f0.setIcon(icon_f57ae9af8045454987b7d54f45e7bb30);
+        
+    
+        var popup_c219a255f7b348dfbaa9565260572a06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_698f1994357d494e8aae2f00a7f9df36 = $(`<div id="html_698f1994357d494e8aae2f00a7f9df36" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_c219a255f7b348dfbaa9565260572a06.setContent(html_698f1994357d494e8aae2f00a7f9df36);
+        
+
+        marker_abff830e60fb401ca816aa39882790f0.bindPopup(popup_c219a255f7b348dfbaa9565260572a06)
+        ;
+
+        
+    
+    
+            var marker_95b0483a9ad44676bae100b3a4659797 = L.marker(
+                [36.84596235385354, 10.155658263814985],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_5f4366a086884d06835ccd78ac7a1dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_95b0483a9ad44676bae100b3a4659797.setIcon(icon_5f4366a086884d06835ccd78ac7a1dba);
+        
+    
+        var popup_25f8d83ac26d49739e4beb45c3e9df75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31216884177946bf9ee3df6feaa1228a = $(`<div id="html_31216884177946bf9ee3df6feaa1228a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_25f8d83ac26d49739e4beb45c3e9df75.setContent(html_31216884177946bf9ee3df6feaa1228a);
+        
+
+        marker_95b0483a9ad44676bae100b3a4659797.bindPopup(popup_25f8d83ac26d49739e4beb45c3e9df75)
+        ;
+
+        
+    
+    
+            var marker_4825bcb3d04d42a6998ad5e8862b5888 = L.marker(
+                [35.83984169606816, 10.622856326613174],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_e5227bd6be5a404082df4c133a840675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4825bcb3d04d42a6998ad5e8862b5888.setIcon(icon_e5227bd6be5a404082df4c133a840675);
+        
+    
+        var popup_c3337c33fc654cfda6841349f97f4b43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a54bf98a74a1416191640eaa3b39ab1d = $(`<div id="html_a54bf98a74a1416191640eaa3b39ab1d" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_c3337c33fc654cfda6841349f97f4b43.setContent(html_a54bf98a74a1416191640eaa3b39ab1d);
+        
+
+        marker_4825bcb3d04d42a6998ad5e8862b5888.bindPopup(popup_c3337c33fc654cfda6841349f97f4b43)
+        ;
+
+        
+    
+    
+            var marker_916a19cbb1b94f12acf035ce7f8f40a1 = L.marker(
+                [36.4471671588357, 10.728606021268604],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_fbcec860fdb54b31831cfbb17db7b369 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_916a19cbb1b94f12acf035ce7f8f40a1.setIcon(icon_fbcec860fdb54b31831cfbb17db7b369);
+        
+    
+        var popup_bb7f8d00d5594507b2971fb8b5bf50c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e18310a338f4335b027f6ef16593936 = $(`<div id="html_9e18310a338f4335b027f6ef16593936" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_bb7f8d00d5594507b2971fb8b5bf50c3.setContent(html_9e18310a338f4335b027f6ef16593936);
+        
+
+        marker_916a19cbb1b94f12acf035ce7f8f40a1.bindPopup(popup_bb7f8d00d5594507b2971fb8b5bf50c3)
+        ;
+
+        
+    
+    
+            var marker_812f6c2513594425a80c9284f1398586 = L.marker(
+                [36.81675938410186, 10.186932737116962],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_45e92136bf5a4e858a988b9b000142a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_812f6c2513594425a80c9284f1398586.setIcon(icon_45e92136bf5a4e858a988b9b000142a5);
+        
+    
+        var popup_e25f171a2878470c915d8d00945d0275 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4676c6e5e2c64d35a746310883489b3d = $(`<div id="html_4676c6e5e2c64d35a746310883489b3d" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_e25f171a2878470c915d8d00945d0275.setContent(html_4676c6e5e2c64d35a746310883489b3d);
+        
+
+        marker_812f6c2513594425a80c9284f1398586.bindPopup(popup_e25f171a2878470c915d8d00945d0275)
+        ;
+
+        
+    
+    
+            var marker_2da908f533414586a78f120c7f664020 = L.marker(
+                [33.33845246022068, 10.487346936197298],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_cb835f900bed472ab1cff6d094fe5ca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2da908f533414586a78f120c7f664020.setIcon(icon_cb835f900bed472ab1cff6d094fe5ca1);
+        
+    
+        var popup_3504f0082bbd4009b9b617a277497db9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_307f58e0e2ec4d03b9844b91e41e3c55 = $(`<div id="html_307f58e0e2ec4d03b9844b91e41e3c55" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_3504f0082bbd4009b9b617a277497db9.setContent(html_307f58e0e2ec4d03b9844b91e41e3c55);
+        
+
+        marker_2da908f533414586a78f120c7f664020.bindPopup(popup_3504f0082bbd4009b9b617a277497db9)
+        ;
+
+        
+    
+    
+            var marker_fe6f0d7cd10a4bd888ba0ffa72fb3921 = L.marker(
+                [33.33876963143675, 10.486511260450897],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_22d9e4f4ecbc401a8fb41b0b86aaa00a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fe6f0d7cd10a4bd888ba0ffa72fb3921.setIcon(icon_22d9e4f4ecbc401a8fb41b0b86aaa00a);
+        
+    
+        var popup_2002cfa6ba2147be82e6fa835125f2ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7149923b2724bbd8e0251fc68a948a1 = $(`<div id="html_b7149923b2724bbd8e0251fc68a948a1" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_2002cfa6ba2147be82e6fa835125f2ba.setContent(html_b7149923b2724bbd8e0251fc68a948a1);
+        
+
+        marker_fe6f0d7cd10a4bd888ba0ffa72fb3921.bindPopup(popup_2002cfa6ba2147be82e6fa835125f2ba)
+        ;
+
+        
+    
+    
+            var marker_2a209d1ff3234da2a6e1dce6071a6177 = L.marker(
+                [33.338400324782924, 10.487227494077075],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_d519434141824a2ba1e5ab18b1fe5784 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2a209d1ff3234da2a6e1dce6071a6177.setIcon(icon_d519434141824a2ba1e5ab18b1fe5784);
+        
+    
+        var popup_6624c264428a4da6918e68bd7f55e385 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0f7bf0811a74a7d876b532a472e9063 = $(`<div id="html_d0f7bf0811a74a7d876b532a472e9063" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_6624c264428a4da6918e68bd7f55e385.setContent(html_d0f7bf0811a74a7d876b532a472e9063);
+        
+
+        marker_2a209d1ff3234da2a6e1dce6071a6177.bindPopup(popup_6624c264428a4da6918e68bd7f55e385)
+        ;
+
+        
+    
+    
+            var marker_102c8fc059dd413d911a32a94c55f1b1 = L.marker(
+                [33.70522333687862, 8.971759535195162],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b8adfeae60c0403ab3d6b0cbcd2e4497 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_102c8fc059dd413d911a32a94c55f1b1.setIcon(icon_b8adfeae60c0403ab3d6b0cbcd2e4497);
+        
+    
+        var popup_9cbd79b642da4f68b7ee98f0fdfc948e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f35a195c69f49efb2e8f07f1b44f7f6 = $(`<div id="html_3f35a195c69f49efb2e8f07f1b44f7f6" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_9cbd79b642da4f68b7ee98f0fdfc948e.setContent(html_3f35a195c69f49efb2e8f07f1b44f7f6);
+        
+
+        marker_102c8fc059dd413d911a32a94c55f1b1.bindPopup(popup_9cbd79b642da4f68b7ee98f0fdfc948e)
+        ;
+
+        
+    
+    
+            var marker_63c24cb196824897831e4ed0b9932e23 = L.marker(
+                [35.93268669641668, 10.299224758656408],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_911b13649d6d4df48f7153441f33f12f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_63c24cb196824897831e4ed0b9932e23.setIcon(icon_911b13649d6d4df48f7153441f33f12f);
+        
+    
+        var popup_2e017adb7d684c2892037265f85488ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3022952c6164765b62cf09bd72503ca = $(`<div id="html_a3022952c6164765b62cf09bd72503ca" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_2e017adb7d684c2892037265f85488ed.setContent(html_a3022952c6164765b62cf09bd72503ca);
+        
+
+        marker_63c24cb196824897831e4ed0b9932e23.bindPopup(popup_2e017adb7d684c2892037265f85488ed)
+        ;
+
+        
+    
+    
+            var marker_e2c447da897448bbbd483bdbb378a21e = L.marker(
+                [36.84531677967112, 10.199996436127094],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_3fa95cda31da448db075c0a6031a25eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e2c447da897448bbbd483bdbb378a21e.setIcon(icon_3fa95cda31da448db075c0a6031a25eb);
+        
+    
+        var popup_7b86f7b48fd44c6a9c666d8dd3f1b284 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3a94956d4f54c77950efd91da80be01 = $(`<div id="html_e3a94956d4f54c77950efd91da80be01" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_7b86f7b48fd44c6a9c666d8dd3f1b284.setContent(html_e3a94956d4f54c77950efd91da80be01);
+        
+
+        marker_e2c447da897448bbbd483bdbb378a21e.bindPopup(popup_7b86f7b48fd44c6a9c666d8dd3f1b284)
+        ;
+
+        
+    
+    
+            var marker_8d437520d03e4d2b9e31190a72dd62d0 = L.marker(
+                [36.76207442287429, 10.235198250161034],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_431aa6f557b44c03a71cc40b5edb240f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8d437520d03e4d2b9e31190a72dd62d0.setIcon(icon_431aa6f557b44c03a71cc40b5edb240f);
+        
+    
+        var popup_f0e78cc50ba64a0997c94a8ec9f8fccf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1be15a0fe3049ccba294dec0e1eeae5 = $(`<div id="html_f1be15a0fe3049ccba294dec0e1eeae5" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_f0e78cc50ba64a0997c94a8ec9f8fccf.setContent(html_f1be15a0fe3049ccba294dec0e1eeae5);
+        
+
+        marker_8d437520d03e4d2b9e31190a72dd62d0.bindPopup(popup_f0e78cc50ba64a0997c94a8ec9f8fccf)
+        ;
+
+        
+    
+    
+            var marker_de8f52e383c44330b39bb163ccbcdbc4 = L.marker(
+                [36.75988733287923, 10.238866338627815],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_d59d38566c0f47258a6ede08e62fbda2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_de8f52e383c44330b39bb163ccbcdbc4.setIcon(icon_d59d38566c0f47258a6ede08e62fbda2);
+        
+    
+        var popup_fc1467f36d8042c5813a1e3c74d427cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83d0ecd53dca4d3b9625e88ff0c882e8 = $(`<div id="html_83d0ecd53dca4d3b9625e88ff0c882e8" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_fc1467f36d8042c5813a1e3c74d427cd.setContent(html_83d0ecd53dca4d3b9625e88ff0c882e8);
+        
+
+        marker_de8f52e383c44330b39bb163ccbcdbc4.bindPopup(popup_fc1467f36d8042c5813a1e3c74d427cd)
+        ;
+
+        
+    
+    
+            var marker_9bac97d0eee44f24ba144f0a5c018561 = L.marker(
+                [35.76636895033428, 10.826981568969074],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_a9f41820305149f98f31f82c40f1519b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9bac97d0eee44f24ba144f0a5c018561.setIcon(icon_a9f41820305149f98f31f82c40f1519b);
+        
+    
+        var popup_a13702279d6446c69e05dd5e624a34d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336199df2c944384b1da10a989767acc = $(`<div id="html_336199df2c944384b1da10a989767acc" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_a13702279d6446c69e05dd5e624a34d4.setContent(html_336199df2c944384b1da10a989767acc);
+        
+
+        marker_9bac97d0eee44f24ba144f0a5c018561.bindPopup(popup_a13702279d6446c69e05dd5e624a34d4)
+        ;
+
+        
+    
+    
+            var marker_fafeb33ac83f49299be2b2c7eb514ebb = L.marker(
+                [35.775572447656856, 10.810044760140528],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_4f563ca480b74018a634eb9a496d0553 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fafeb33ac83f49299be2b2c7eb514ebb.setIcon(icon_4f563ca480b74018a634eb9a496d0553);
+        
+    
+        var popup_6fff9e5263ff493188b9e205af788dfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81a3b107b7b649d3be0fc2e443233f17 = $(`<div id="html_81a3b107b7b649d3be0fc2e443233f17" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_6fff9e5263ff493188b9e205af788dfd.setContent(html_81a3b107b7b649d3be0fc2e443233f17);
+        
+
+        marker_fafeb33ac83f49299be2b2c7eb514ebb.bindPopup(popup_6fff9e5263ff493188b9e205af788dfd)
+        ;
+
+        
+    
+    
+            var marker_46d203d93cb74564a800159c196250e9 = L.marker(
+                [36.82716266704469, 10.179378295424755],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_a5f363e613c549c6b0c038f3cda35205 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_46d203d93cb74564a800159c196250e9.setIcon(icon_a5f363e613c549c6b0c038f3cda35205);
+        
+    
+        var popup_ea9280da438f4b3694bd011812bab452 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2358eb1487c74f389ef3055c4d3796c3 = $(`<div id="html_2358eb1487c74f389ef3055c4d3796c3" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ea9280da438f4b3694bd011812bab452.setContent(html_2358eb1487c74f389ef3055c4d3796c3);
+        
+
+        marker_46d203d93cb74564a800159c196250e9.bindPopup(popup_ea9280da438f4b3694bd011812bab452)
+        ;
+
+        
+    
+    
+            var marker_8bcc38476abc49938559a3d239105536 = L.marker(
+                [36.82692017858588, 10.179626818853848],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_170a228627c74024b5b2e8a91d754413 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8bcc38476abc49938559a3d239105536.setIcon(icon_170a228627c74024b5b2e8a91d754413);
+        
+    
+        var popup_879fac1247834d62a8dd33e4b1d3a41d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ddd54da228a4b18807dcf6b75474dfa = $(`<div id="html_2ddd54da228a4b18807dcf6b75474dfa" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_879fac1247834d62a8dd33e4b1d3a41d.setContent(html_2ddd54da228a4b18807dcf6b75474dfa);
+        
+
+        marker_8bcc38476abc49938559a3d239105536.bindPopup(popup_879fac1247834d62a8dd33e4b1d3a41d)
+        ;
+
+        
+    
+    
+            var marker_cb0ef6ec4f1946ce8622c4479d5df986 = L.marker(
+                [36.84641715591974, 10.197287740297526],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_4f4c1adcfe024a2dbd8c1ee318255cd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cb0ef6ec4f1946ce8622c4479d5df986.setIcon(icon_4f4c1adcfe024a2dbd8c1ee318255cd0);
+        
+    
+        var popup_ee593837445d47529c747426240aed2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ce8c65329b474ef98322129c6702f478 = $(`<div id="html_ce8c65329b474ef98322129c6702f478" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ee593837445d47529c747426240aed2e.setContent(html_ce8c65329b474ef98322129c6702f478);
+        
+
+        marker_cb0ef6ec4f1946ce8622c4479d5df986.bindPopup(popup_ee593837445d47529c747426240aed2e)
+        ;
+
+        
+    
+    
+            var marker_7254a3d4bf6e46c39ef5f1722a3468fb = L.marker(
+                [36.819777958891734, 10.09453298346503],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_8456f7509d644eed99d123dc5ea135ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7254a3d4bf6e46c39ef5f1722a3468fb.setIcon(icon_8456f7509d644eed99d123dc5ea135ea);
+        
+    
+        var popup_276774e14c0d40b19a50812d23254011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04ff30bccec243cbb34df6a470419c3a = $(`<div id="html_04ff30bccec243cbb34df6a470419c3a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_276774e14c0d40b19a50812d23254011.setContent(html_04ff30bccec243cbb34df6a470419c3a);
+        
+
+        marker_7254a3d4bf6e46c39ef5f1722a3468fb.bindPopup(popup_276774e14c0d40b19a50812d23254011)
+        ;
+
+        
+    
+    
+            var marker_48b17108cf7747c28e27049b9a5c9065 = L.marker(
+                [36.8349526402161, 10.150625182416377],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_a6a2c38d954c43199755bebd893cba9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_48b17108cf7747c28e27049b9a5c9065.setIcon(icon_a6a2c38d954c43199755bebd893cba9d);
+        
+    
+        var popup_07f996b4f7894b1e830406fa4efee11a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84b3945e72bd46339274de7dff0fa423 = $(`<div id="html_84b3945e72bd46339274de7dff0fa423" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_07f996b4f7894b1e830406fa4efee11a.setContent(html_84b3945e72bd46339274de7dff0fa423);
+        
+
+        marker_48b17108cf7747c28e27049b9a5c9065.bindPopup(popup_07f996b4f7894b1e830406fa4efee11a)
+        ;
+
+        
+    
+    
+            var marker_2ac85b29e28f41158179d876eb928c10 = L.marker(
+                [36.826013424300584, 10.193598026520561],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f047072181244f1da805fc02e5e428d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2ac85b29e28f41158179d876eb928c10.setIcon(icon_f047072181244f1da805fc02e5e428d9);
+        
+    
+        var popup_0e0d6a6bfb0048adab5cf7855886eb26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dbf51a9809f4cf8bff0b0b8fa11b7a5 = $(`<div id="html_2dbf51a9809f4cf8bff0b0b8fa11b7a5" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_0e0d6a6bfb0048adab5cf7855886eb26.setContent(html_2dbf51a9809f4cf8bff0b0b8fa11b7a5);
+        
+
+        marker_2ac85b29e28f41158179d876eb928c10.bindPopup(popup_0e0d6a6bfb0048adab5cf7855886eb26)
+        ;
+
+        
+    
+    
+            var marker_e079f5d1efe04be49297c62940c7040b = L.marker(
+                [36.835499391760095, 10.151948768746507],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_c4d04df75d75400d97aad24b1063cc91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e079f5d1efe04be49297c62940c7040b.setIcon(icon_c4d04df75d75400d97aad24b1063cc91);
+        
+    
+        var popup_5cc268051ef4497abd1a54d3f23aeaab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_268340535c4140ff9fbce72975becd39 = $(`<div id="html_268340535c4140ff9fbce72975becd39" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_5cc268051ef4497abd1a54d3f23aeaab.setContent(html_268340535c4140ff9fbce72975becd39);
+        
+
+        marker_e079f5d1efe04be49297c62940c7040b.bindPopup(popup_5cc268051ef4497abd1a54d3f23aeaab)
+        ;
+
+        
+    
+    
+            var marker_bb148f4d58474cf1b78c324eefa580cd = L.marker(
+                [36.84258159702753, 10.16571168611938],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_9dbeb8a3822f431e9dad68304cba6c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bb148f4d58474cf1b78c324eefa580cd.setIcon(icon_9dbeb8a3822f431e9dad68304cba6c6d);
+        
+    
+        var popup_70a74f131a6d48e391b6ba86bcb64f60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6de144f436f44c55ad625bf4f5d826b9 = $(`<div id="html_6de144f436f44c55ad625bf4f5d826b9" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_70a74f131a6d48e391b6ba86bcb64f60.setContent(html_6de144f436f44c55ad625bf4f5d826b9);
+        
+
+        marker_bb148f4d58474cf1b78c324eefa580cd.bindPopup(popup_70a74f131a6d48e391b6ba86bcb64f60)
+        ;
+
+        
+    
+    
+            var marker_470d7c4cc8bc41fc9a18fcea1125a83d = L.marker(
+                [36.87108031927457, 10.337712278734358],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_7f2a04d853274976a325489f9f9df9f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_470d7c4cc8bc41fc9a18fcea1125a83d.setIcon(icon_7f2a04d853274976a325489f9f9df9f5);
+        
+    
+        var popup_7b9baeb20ba24fbea2da9c70c73c80ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab18070cfba04bc4872e9623906c3d0b = $(`<div id="html_ab18070cfba04bc4872e9623906c3d0b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_7b9baeb20ba24fbea2da9c70c73c80ca.setContent(html_ab18070cfba04bc4872e9623906c3d0b);
+        
+
+        marker_470d7c4cc8bc41fc9a18fcea1125a83d.bindPopup(popup_7b9baeb20ba24fbea2da9c70c73c80ca)
+        ;
+
+        
+    
+    
+            var marker_dcbbbc93573f4ee3b0708e451fbc23f4 = L.marker(
+                [34.74039592252049, 10.744725929813853],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_4bfba4fd48bb4817b8a4e898006712f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dcbbbc93573f4ee3b0708e451fbc23f4.setIcon(icon_4bfba4fd48bb4817b8a4e898006712f2);
+        
+    
+        var popup_7928992752b643d99092596d6ea3b0f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9864cd81fcb470a880ce08628e2eb28 = $(`<div id="html_e9864cd81fcb470a880ce08628e2eb28" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_7928992752b643d99092596d6ea3b0f4.setContent(html_e9864cd81fcb470a880ce08628e2eb28);
+        
+
+        marker_dcbbbc93573f4ee3b0708e451fbc23f4.bindPopup(popup_7928992752b643d99092596d6ea3b0f4)
+        ;
+
+        
+    
+    
+            var marker_9c98ffe61d5d4b31b474b5dcc40015ef = L.marker(
+                [36.746689523418354, 10.308079987902147],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_de130e89e08b44c7b333dc3dacf53275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9c98ffe61d5d4b31b474b5dcc40015ef.setIcon(icon_de130e89e08b44c7b333dc3dacf53275);
+        
+    
+        var popup_afd67c33726d46be8ecb56cc5b2615d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bee482f8d01a48229a7bafbd983e40d0 = $(`<div id="html_bee482f8d01a48229a7bafbd983e40d0" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_afd67c33726d46be8ecb56cc5b2615d7.setContent(html_bee482f8d01a48229a7bafbd983e40d0);
+        
+
+        marker_9c98ffe61d5d4b31b474b5dcc40015ef.bindPopup(popup_afd67c33726d46be8ecb56cc5b2615d7)
+        ;
+
+        
+    
+    
+            var marker_55c9e0dd48dd4ba0806d510047156bae = L.marker(
+                [36.8698138975241, 10.177597476276503],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_76c4d9e8b4064f8086e007fea7de94ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_55c9e0dd48dd4ba0806d510047156bae.setIcon(icon_76c4d9e8b4064f8086e007fea7de94ec);
+        
+    
+        var popup_37273636390f4091890ebf51027bb444 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b718d9310ac940d4a2e38f4a3eaad82a = $(`<div id="html_b718d9310ac940d4a2e38f4a3eaad82a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_37273636390f4091890ebf51027bb444.setContent(html_b718d9310ac940d4a2e38f4a3eaad82a);
+        
+
+        marker_55c9e0dd48dd4ba0806d510047156bae.bindPopup(popup_37273636390f4091890ebf51027bb444)
+        ;
+
+        
+    
+    
+            var marker_0e5480b178e64f7d977ad80f267dbcc1 = L.marker(
+                [36.80473512490428, 10.157252753255676],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b7183442c2994e74a70977452f8bfeb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0e5480b178e64f7d977ad80f267dbcc1.setIcon(icon_b7183442c2994e74a70977452f8bfeb9);
+        
+    
+        var popup_f93546c831ae468787004ec98949c67c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e5329cc9de8844469df3d493952bede7 = $(`<div id="html_e5329cc9de8844469df3d493952bede7" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_f93546c831ae468787004ec98949c67c.setContent(html_e5329cc9de8844469df3d493952bede7);
+        
+
+        marker_0e5480b178e64f7d977ad80f267dbcc1.bindPopup(popup_f93546c831ae468787004ec98949c67c)
+        ;
+
+        
+    
+    
+            var marker_11eb94f2c6894a8483e64c2b353d19b1 = L.marker(
+                [36.84230566477507, 10.157751141218398],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b4614bffc3334e80b9e8627bed559fd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_11eb94f2c6894a8483e64c2b353d19b1.setIcon(icon_b4614bffc3334e80b9e8627bed559fd7);
+        
+    
+        var popup_3094c9f399ec436d8ed09e809fcd3c0c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca8a90f11a1442dbae7ca1f0eb0786b0 = $(`<div id="html_ca8a90f11a1442dbae7ca1f0eb0786b0" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_3094c9f399ec436d8ed09e809fcd3c0c.setContent(html_ca8a90f11a1442dbae7ca1f0eb0786b0);
+        
+
+        marker_11eb94f2c6894a8483e64c2b353d19b1.bindPopup(popup_3094c9f399ec436d8ed09e809fcd3c0c)
+        ;
+
+        
+    
+    
+            var marker_19497efcdcdf40b59084ecaba93afd9b = L.marker(
+                [35.83244491797464, 10.630913933952911],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b720d79e8c5e457db9dd1cb7880dfb00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_19497efcdcdf40b59084ecaba93afd9b.setIcon(icon_b720d79e8c5e457db9dd1cb7880dfb00);
+        
+    
+        var popup_504387c0bfc0480384707f5670437325 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8914975f08ba43f684c8fc4f41dff7b5 = $(`<div id="html_8914975f08ba43f684c8fc4f41dff7b5" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_504387c0bfc0480384707f5670437325.setContent(html_8914975f08ba43f684c8fc4f41dff7b5);
+        
+
+        marker_19497efcdcdf40b59084ecaba93afd9b.bindPopup(popup_504387c0bfc0480384707f5670437325)
+        ;
+
+        
+    
+    
+            var marker_2c557d1c655141b388efbd71184c8928 = L.marker(
+                [36.45463484783008, 10.731937743961055],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f64364ccebb1402181b43ee552824f41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2c557d1c655141b388efbd71184c8928.setIcon(icon_f64364ccebb1402181b43ee552824f41);
+        
+    
+        var popup_9aa661f2fc974f00a236c40601a593dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7ef5e1481d64c4c87af9e423846f629 = $(`<div id="html_a7ef5e1481d64c4c87af9e423846f629" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_9aa661f2fc974f00a236c40601a593dd.setContent(html_a7ef5e1481d64c4c87af9e423846f629);
+        
+
+        marker_2c557d1c655141b388efbd71184c8928.bindPopup(popup_9aa661f2fc974f00a236c40601a593dd)
+        ;
+
+        
+    
+    
+            var marker_6f532b417e2d41b7b79f5c7a6c96b226 = L.marker(
+                [35.68107487127867, 10.852431457755785],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_072c717b809c4114b52cd9534459b4ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f532b417e2d41b7b79f5c7a6c96b226.setIcon(icon_072c717b809c4114b52cd9534459b4ee);
+        
+    
+        var popup_1ad433359cb948b4b15fbd3bc1706994 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db3f1179b5884da1b206c12fe7c6d2ca = $(`<div id="html_db3f1179b5884da1b206c12fe7c6d2ca" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_1ad433359cb948b4b15fbd3bc1706994.setContent(html_db3f1179b5884da1b206c12fe7c6d2ca);
+        
+
+        marker_6f532b417e2d41b7b79f5c7a6c96b226.bindPopup(popup_1ad433359cb948b4b15fbd3bc1706994)
+        ;
+
+        
+    
+    
+            var marker_23b73d901d6941fbb9ead3c6a0643df4 = L.marker(
+                [36.64635654986978, 9.630059625931466],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_5f9ab05cb00144c3ad7d9001a01ec973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_23b73d901d6941fbb9ead3c6a0643df4.setIcon(icon_5f9ab05cb00144c3ad7d9001a01ec973);
+        
+    
+        var popup_324a69c045a74ea0a63c1d7da1edc589 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46cfdb4ab7a149b28dd2b74adf0f4263 = $(`<div id="html_46cfdb4ab7a149b28dd2b74adf0f4263" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_324a69c045a74ea0a63c1d7da1edc589.setContent(html_46cfdb4ab7a149b28dd2b74adf0f4263);
+        
+
+        marker_23b73d901d6941fbb9ead3c6a0643df4.bindPopup(popup_324a69c045a74ea0a63c1d7da1edc589)
+        ;
+
+        
+    
+    
+            var marker_55bf63cbaf694534864cb38f074593a8 = L.marker(
+                [36.40070233005042, 10.61249302534847],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_c9c63fc82ba24260bb5475dcce84bbf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_55bf63cbaf694534864cb38f074593a8.setIcon(icon_c9c63fc82ba24260bb5475dcce84bbf0);
+        
+    
+        var popup_a6ba3c27a4854e598fe25a49eeee82d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9e47c7a255a45fc92d9b4c5d2ffc38e = $(`<div id="html_f9e47c7a255a45fc92d9b4c5d2ffc38e" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_a6ba3c27a4854e598fe25a49eeee82d4.setContent(html_f9e47c7a255a45fc92d9b4c5d2ffc38e);
+        
+
+        marker_55bf63cbaf694534864cb38f074593a8.bindPopup(popup_a6ba3c27a4854e598fe25a49eeee82d4)
+        ;
+
+        
+    
+    
+            var marker_70bc1d0b5b6b48f69f35aecf75a1c896 = L.marker(
+                [36.844124370125655, 10.28258475301925],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_b0423b8ba55f4ade86398b4c850117e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_70bc1d0b5b6b48f69f35aecf75a1c896.setIcon(icon_b0423b8ba55f4ade86398b4c850117e9);
+        
+    
+        var popup_74e249b907be4d02a8500435168ba49a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb065b54a7444a46b668f6b0bcc6b7cc = $(`<div id="html_fb065b54a7444a46b668f6b0bcc6b7cc" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_74e249b907be4d02a8500435168ba49a.setContent(html_fb065b54a7444a46b668f6b0bcc6b7cc);
+        
+
+        marker_70bc1d0b5b6b48f69f35aecf75a1c896.bindPopup(popup_74e249b907be4d02a8500435168ba49a)
+        ;
+
+        
+    
+    
+            var marker_e68cc265b1634cc687f70773b2fd819b = L.marker(
+                [36.76044682491607, 10.186734086011768],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_22f8baf6e8fe45df955f1d35486002d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e68cc265b1634cc687f70773b2fd819b.setIcon(icon_22f8baf6e8fe45df955f1d35486002d0);
+        
+    
+        var popup_2d81ad6db72b4610b457af368804007d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_957035eb99df413ea0a7f6902afb243f = $(`<div id="html_957035eb99df413ea0a7f6902afb243f" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_2d81ad6db72b4610b457af368804007d.setContent(html_957035eb99df413ea0a7f6902afb243f);
+        
+
+        marker_e68cc265b1634cc687f70773b2fd819b.bindPopup(popup_2d81ad6db72b4610b457af368804007d)
+        ;
+
+        
+    
+    
+            var marker_ca2c9e80129d4f2eaab5fc41b7939b17 = L.marker(
+                [33.889158586146266, 10.844641987498562],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_359090b11b24449aad607b8845386f83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ca2c9e80129d4f2eaab5fc41b7939b17.setIcon(icon_359090b11b24449aad607b8845386f83);
+        
+    
+        var popup_57f0cbe3ec5047a0ab10eac334dcdb63 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03d2351061204371a84ee4e6e1e41e48 = $(`<div id="html_03d2351061204371a84ee4e6e1e41e48" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_57f0cbe3ec5047a0ab10eac334dcdb63.setContent(html_03d2351061204371a84ee4e6e1e41e48);
+        
+
+        marker_ca2c9e80129d4f2eaab5fc41b7939b17.bindPopup(popup_57f0cbe3ec5047a0ab10eac334dcdb63)
+        ;
+
+        
+    
+    
+            var marker_4164e31d622e44da9b4d3a763a5b467d = L.marker(
+                [33.876459751381304, 10.855449278174376],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_161ed551ccd14ffcb285ae78fb545389 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4164e31d622e44da9b4d3a763a5b467d.setIcon(icon_161ed551ccd14ffcb285ae78fb545389);
+        
+    
+        var popup_caf4aa8bbcab438a84c7c624a38df19e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f40bd31adf454a2cbeaa6f2220e79f45 = $(`<div id="html_f40bd31adf454a2cbeaa6f2220e79f45" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_caf4aa8bbcab438a84c7c624a38df19e.setContent(html_f40bd31adf454a2cbeaa6f2220e79f45);
+        
+
+        marker_4164e31d622e44da9b4d3a763a5b467d.bindPopup(popup_caf4aa8bbcab438a84c7c624a38df19e)
+        ;
+
+        
+    
+    
+            var marker_64d9895fab9a447e9b168e0db2ec87fd = L.marker(
+                [33.871536137638145, 10.857349036528632],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_a4cc4471fc5e4cd986264775f08ecc0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_64d9895fab9a447e9b168e0db2ec87fd.setIcon(icon_a4cc4471fc5e4cd986264775f08ecc0e);
+        
+    
+        var popup_5f88dd67a6ee4c6ba0d770367fa87b16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a2e2c07a0d049039b1d980689f8072a = $(`<div id="html_1a2e2c07a0d049039b1d980689f8072a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_5f88dd67a6ee4c6ba0d770367fa87b16.setContent(html_1a2e2c07a0d049039b1d980689f8072a);
+        
+
+        marker_64d9895fab9a447e9b168e0db2ec87fd.bindPopup(popup_5f88dd67a6ee4c6ba0d770367fa87b16)
+        ;
+
+        
+    
+    
+            var marker_3d90fd5bab224a02b26873cdc1257ce7 = L.marker(
+                [36.831681351045546, 10.15576563599464],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_28146f16126a4d6c83df21768de6edb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3d90fd5bab224a02b26873cdc1257ce7.setIcon(icon_28146f16126a4d6c83df21768de6edb0);
+        
+    
+        var popup_5b43455f29a043748c6ded8c9fc7c037 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6a4b3feb343e4684b331b72d09d13fc1 = $(`<div id="html_6a4b3feb343e4684b331b72d09d13fc1" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_5b43455f29a043748c6ded8c9fc7c037.setContent(html_6a4b3feb343e4684b331b72d09d13fc1);
+        
+
+        marker_3d90fd5bab224a02b26873cdc1257ce7.bindPopup(popup_5b43455f29a043748c6ded8c9fc7c037)
+        ;
+
+        
+    
+    
+            var marker_c1ecf5db5e93453393e0f06a27a91d29 = L.marker(
+                [36.84554744964643, 10.284644773362231],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_f87901a8c60444ae87a6b43e88a8edeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c1ecf5db5e93453393e0f06a27a91d29.setIcon(icon_f87901a8c60444ae87a6b43e88a8edeb);
+        
+    
+        var popup_87ec5d1a26c7428dbdec3453c9e32da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27b59f76c6cc44bfb7c1f8fba84c01b9 = $(`<div id="html_27b59f76c6cc44bfb7c1f8fba84c01b9" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_87ec5d1a26c7428dbdec3453c9e32da0.setContent(html_27b59f76c6cc44bfb7c1f8fba84c01b9);
+        
+
+        marker_c1ecf5db5e93453393e0f06a27a91d29.bindPopup(popup_87ec5d1a26c7428dbdec3453c9e32da0)
+        ;
+
+        
+    
+    
+            var marker_0b47a808d84f489580b866877589080b = L.marker(
+                [36.80938733262269, 10.138528838851528],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_328130fbefd648bcb63c80e10b4f01a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b47a808d84f489580b866877589080b.setIcon(icon_328130fbefd648bcb63c80e10b4f01a9);
+        
+    
+        var popup_aa112df832134014bccc40e828d11656 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d860e99cc3754a21acf3b9a92bea3c1c = $(`<div id="html_d860e99cc3754a21acf3b9a92bea3c1c" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_aa112df832134014bccc40e828d11656.setContent(html_d860e99cc3754a21acf3b9a92bea3c1c);
+        
+
+        marker_0b47a808d84f489580b866877589080b.bindPopup(popup_aa112df832134014bccc40e828d11656)
+        ;
+
+        
+    
+    
+            var marker_5a12c3f7941a4cd5b680871a1d056781 = L.marker(
+                [36.8349441744939, 10.151092892613462],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_26ed2093f37245088fee8f3e8277df60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5a12c3f7941a4cd5b680871a1d056781.setIcon(icon_26ed2093f37245088fee8f3e8277df60);
+        
+    
+        var popup_9a239565511f44a8a24d4ff81a5a1805 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9859df3ecc6445d6a756a92e532d8353 = $(`<div id="html_9859df3ecc6445d6a756a92e532d8353" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_9a239565511f44a8a24d4ff81a5a1805.setContent(html_9859df3ecc6445d6a756a92e532d8353);
+        
+
+        marker_5a12c3f7941a4cd5b680871a1d056781.bindPopup(popup_9a239565511f44a8a24d4ff81a5a1805)
+        ;
+
+        
+    
+    
+            var marker_6702f5e6ea5349bea141c97c07d91f6d = L.marker(
+                [36.836134572382576, 10.233309555918936],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_809138223b7a42f6ad022f9b6432d3c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6702f5e6ea5349bea141c97c07d91f6d.setIcon(icon_809138223b7a42f6ad022f9b6432d3c7);
+        
+    
+        var popup_172ec45aa5e4423190ff7ea1bba09e1a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a20c03e7f7446bc81891d9e0cf2b7ec = $(`<div id="html_0a20c03e7f7446bc81891d9e0cf2b7ec" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_172ec45aa5e4423190ff7ea1bba09e1a.setContent(html_0a20c03e7f7446bc81891d9e0cf2b7ec);
+        
+
+        marker_6702f5e6ea5349bea141c97c07d91f6d.bindPopup(popup_172ec45aa5e4423190ff7ea1bba09e1a)
+        ;
+
+        
+    
+    
+            var marker_7f658e2d5540491d92721551f61097f4 = L.marker(
+                [36.82586749536631, 10.194248294568752],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_55b70c1d768a430a907a9a83dd8f05ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7f658e2d5540491d92721551f61097f4.setIcon(icon_55b70c1d768a430a907a9a83dd8f05ad);
+        
+    
+        var popup_040b4a828d774137a230ffd811f7ac73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f78acf3d39954a7cb0701b892668b89a = $(`<div id="html_f78acf3d39954a7cb0701b892668b89a" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_040b4a828d774137a230ffd811f7ac73.setContent(html_f78acf3d39954a7cb0701b892668b89a);
+        
+
+        marker_7f658e2d5540491d92721551f61097f4.bindPopup(popup_040b4a828d774137a230ffd811f7ac73)
+        ;
+
+        
+    
+    
+            var marker_2cbcfc32f80841279e34b1d890f18dae = L.marker(
+                [36.69323686959538, 10.489491949038438],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_039c674749924c40a894519a168529ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2cbcfc32f80841279e34b1d890f18dae.setIcon(icon_039c674749924c40a894519a168529ba);
+        
+    
+        var popup_c0b3b4dd550f49ed8278a66c529bd170 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4d2f3acb2034c1c8712011b83a31084 = $(`<div id="html_c4d2f3acb2034c1c8712011b83a31084" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_c0b3b4dd550f49ed8278a66c529bd170.setContent(html_c4d2f3acb2034c1c8712011b83a31084);
+        
+
+        marker_2cbcfc32f80841279e34b1d890f18dae.bindPopup(popup_c0b3b4dd550f49ed8278a66c529bd170)
+        ;
+
+        
+    
+    
+            var marker_531be7508a6942259899ba52c67c416b = L.marker(
+                [36.84985993882921, 10.165116235717932],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_0db73b0c2b044cc080b5d8867e43ec01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_531be7508a6942259899ba52c67c416b.setIcon(icon_0db73b0c2b044cc080b5d8867e43ec01);
+        
+    
+        var popup_1841343a98ce4471b3c75aeae58542bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f67c7a7792524db488a2a36280f48187 = $(`<div id="html_f67c7a7792524db488a2a36280f48187" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_1841343a98ce4471b3c75aeae58542bf.setContent(html_f67c7a7792524db488a2a36280f48187);
+        
+
+        marker_531be7508a6942259899ba52c67c416b.bindPopup(popup_1841343a98ce4471b3c75aeae58542bf)
+        ;
+
+        
+    
+    
+            var marker_ff2ced02c99347efbc74454f2fb60be4 = L.marker(
+                [36.85259906096729, 10.168554743856788],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_842dabbf12f24df8baccdee7b7c6a3da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ff2ced02c99347efbc74454f2fb60be4.setIcon(icon_842dabbf12f24df8baccdee7b7c6a3da);
+        
+    
+        var popup_e25089f5b6c74b4dbfd59526483ab2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d44060122d4be0a1162c4a33aecc5f = $(`<div id="html_a7d44060122d4be0a1162c4a33aecc5f" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_e25089f5b6c74b4dbfd59526483ab2b1.setContent(html_a7d44060122d4be0a1162c4a33aecc5f);
+        
+
+        marker_ff2ced02c99347efbc74454f2fb60be4.bindPopup(popup_e25089f5b6c74b4dbfd59526483ab2b1)
+        ;
+
+        
+    
+    
+            var marker_6dccfee7a9524409ac6536078a6b59b5 = L.marker(
+                [34.77153544718138, 10.760164221993023],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_043be4ac538741a79e034d839f0921c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6dccfee7a9524409ac6536078a6b59b5.setIcon(icon_043be4ac538741a79e034d839f0921c1);
+        
+    
+        var popup_dea94b52763148649b792ce4152933cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf09642f44bf4b828d664046c3941c69 = $(`<div id="html_bf09642f44bf4b828d664046c3941c69" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_dea94b52763148649b792ce4152933cf.setContent(html_bf09642f44bf4b828d664046c3941c69);
+        
+
+        marker_6dccfee7a9524409ac6536078a6b59b5.bindPopup(popup_dea94b52763148649b792ce4152933cf)
+        ;
+
+        
+    
+    
+            var marker_4cf1f70111c540978550431cfe5d2784 = L.marker(
+                [34.76376483620632, 10.73893814185351],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_21d4c7ec84c845ed9f148216de80470d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4cf1f70111c540978550431cfe5d2784.setIcon(icon_21d4c7ec84c845ed9f148216de80470d);
+        
+    
+        var popup_e5a303301d14446ca244a142491e2e06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4b5840594484eb38a56b4e576fc980e = $(`<div id="html_e4b5840594484eb38a56b4e576fc980e" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_e5a303301d14446ca244a142491e2e06.setContent(html_e4b5840594484eb38a56b4e576fc980e);
+        
+
+        marker_4cf1f70111c540978550431cfe5d2784.bindPopup(popup_e5a303301d14446ca244a142491e2e06)
+        ;
+
+        
+    
+    
+            var marker_01cbfbf4f5234bad88a9720f49a234be = L.marker(
+                [34.74062852033356, 10.76116393158452],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_5b9545fe0ad74f5fae2db0cab47b0eb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_01cbfbf4f5234bad88a9720f49a234be.setIcon(icon_5b9545fe0ad74f5fae2db0cab47b0eb6);
+        
+    
+        var popup_73f650b2e48d4b61a174259f2a94528e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e91ebb76cd69452793ed99b88ebcbc44 = $(`<div id="html_e91ebb76cd69452793ed99b88ebcbc44" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_73f650b2e48d4b61a174259f2a94528e.setContent(html_e91ebb76cd69452793ed99b88ebcbc44);
+        
+
+        marker_01cbfbf4f5234bad88a9720f49a234be.bindPopup(popup_73f650b2e48d4b61a174259f2a94528e)
+        ;
+
+        
+    
+    
+            var marker_79f8c48ac61345ef9acf343b1c7257e6 = L.marker(
+                [34.760198755501136, 10.741026995943372],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_5c1d44f01a3f401d86388c71c1de0e35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_79f8c48ac61345ef9acf343b1c7257e6.setIcon(icon_5c1d44f01a3f401d86388c71c1de0e35);
+        
+    
+        var popup_ed9224a8efa54188b4a688760e8358fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e514b79ff5748a19f1ff1765e8c52ed = $(`<div id="html_6e514b79ff5748a19f1ff1765e8c52ed" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ed9224a8efa54188b4a688760e8358fd.setContent(html_6e514b79ff5748a19f1ff1765e8c52ed);
+        
+
+        marker_79f8c48ac61345ef9acf343b1c7257e6.bindPopup(popup_ed9224a8efa54188b4a688760e8358fd)
+        ;
+
+        
+    
+    
+            var marker_02ab176504cd43efad6b22d3b10eb28e = L.marker(
+                [34.74723915972845, 10.738608230144592],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_48e6c82f905e4df892b15283e91aa504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_02ab176504cd43efad6b22d3b10eb28e.setIcon(icon_48e6c82f905e4df892b15283e91aa504);
+        
+    
+        var popup_45e82340ee4746c4a5479c6cfe87fe23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9a4473a0c604ceab1d9246424edd35b = $(`<div id="html_e9a4473a0c604ceab1d9246424edd35b" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_45e82340ee4746c4a5479c6cfe87fe23.setContent(html_e9a4473a0c604ceab1d9246424edd35b);
+        
+
+        marker_02ab176504cd43efad6b22d3b10eb28e.bindPopup(popup_45e82340ee4746c4a5479c6cfe87fe23)
+        ;
+
+        
+    
+    
+            var marker_c9333e5f840c4a94bb61c6876498cebd = L.marker(
+                [34.73563558825117, 10.749612747002061],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_c433898bc91a45e2884c9cfa4cb3135f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c9333e5f840c4a94bb61c6876498cebd.setIcon(icon_c433898bc91a45e2884c9cfa4cb3135f);
+        
+    
+        var popup_ee94062f3e884f8c8c244d56ac801e8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc28791758b64fdd8e23c6527ff293c2 = $(`<div id="html_fc28791758b64fdd8e23c6527ff293c2" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_ee94062f3e884f8c8c244d56ac801e8d.setContent(html_fc28791758b64fdd8e23c6527ff293c2);
+        
+
+        marker_c9333e5f840c4a94bb61c6876498cebd.bindPopup(popup_ee94062f3e884f8c8c244d56ac801e8d)
+        ;
+
+        
+    
+    
+            var marker_37a6102191bd4af581cc21f8999c3667 = L.marker(
+                [34.756200084773184, 10.769443156444169],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_be701c33745b4793a38fc5f6db6e32d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_37a6102191bd4af581cc21f8999c3667.setIcon(icon_be701c33745b4793a38fc5f6db6e32d4);
+        
+    
+        var popup_e54150a52bf441909862dcdae65b1f8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5f336d4c0574014937b344a64794642 = $(`<div id="html_b5f336d4c0574014937b344a64794642" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_e54150a52bf441909862dcdae65b1f8a.setContent(html_b5f336d4c0574014937b344a64794642);
+        
+
+        marker_37a6102191bd4af581cc21f8999c3667.bindPopup(popup_e54150a52bf441909862dcdae65b1f8a)
+        ;
+
+        
+    
+    
+            var marker_bdf982bebee94fae81726411e81424d0 = L.marker(
+                [36.83003874948062, 10.192193471005766],
+                {}
+            ).addTo(marker_cluster_3eb83fc6ebf44c2a8af77d03b04b0d34);
+        
+    
+            var icon_6ff9aae146d1462b82e6a44dc34284ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ambulance", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bdf982bebee94fae81726411e81424d0.setIcon(icon_6ff9aae146d1462b82e6a44dc34284ac);
+        
+    
+        var popup_eef86a80308044aeb9e6e943831bc853 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9e016b0c37a4fdc9ca9eabbbc5a8787 = $(`<div id="html_e9e016b0c37a4fdc9ca9eabbbc5a8787" style="width: 100.0%; height: 100.0%;">Hospital</div>`)[0];
+            popup_eef86a80308044aeb9e6e943831bc853.setContent(html_e9e016b0c37a4fdc9ca9eabbbc5a8787);
+        
+
+        marker_bdf982bebee94fae81726411e81424d0.bindPopup(popup_eef86a80308044aeb9e6e943831bc853)
+        ;
+
+        
+    
+    
+            var heat_map_787ec35dca4e43aa832b090abe12b5ed = L.heatLayer(
+                [[34.14333339835366, 7.61416665167056, 4.051222222222222], [33.97666673235457, 7.61416665167056, 3.25625], [33.810000066355485, 7.61416665167056, 4.047361111111111], [33.6433334003564, 7.61416665167056, 2.448111111111111], [33.47666673435731, 7.61416665167056, 3.381888888888889], [34.476666730351845, 7.780833317681623, 4.238416666666667], [34.31000006435276, 7.780833317681623, 5.496111111111111], [34.14333339835366, 7.780833317681623, 7.720166666666667], [33.97666673235457, 7.780833317681623, 2.015111111111111], [33.810000066355485, 7.780833317681623, 1.831805555555555], [33.6433334003564, 7.780833317681623, 4.583333333333333], [33.47666673435731, 7.780833317681623, 3.099027777777778], [33.31000006835822, 7.780833317681623, 4.261694444444445], [33.143333402359126, 7.780833317681623, 4.946166666666667], [34.476666730351845, 7.947499983692686, 3.2155], [34.31000006435276, 7.947499983692686, 1.976916666666667], [34.14333339835366, 7.947499983692686, 3.143277777777778], [33.97666673235457, 7.947499983692686, 2.657944444444444], [33.810000066355485, 7.947499983692686, 2.887055555555555], [33.6433334003564, 7.947499983692686, 1.748166666666667], [33.47666673435731, 7.947499983692686, 2.814111111111111], [33.31000006835822, 7.947499983692686, 2.800138888888889], [33.143333402359126, 7.947499983692686, 5.469194444444444], [36.47666672234092, 8.11416664970375, 4.626583333333333], [34.64333339635093, 8.11416664970375, 4.70086111111111], [34.476666730351845, 8.11416664970375, 3.011888888888889], [34.31000006435276, 8.11416664970375, 2.6045], [34.14333339835366, 8.11416664970375, 4.797138888888889], [33.97666673235457, 8.11416664970375, 1.606888888888889], [33.810000066355485, 8.11416664970375, 2.578722222222222], [33.6433334003564, 8.11416664970375, 2.578722222222222], [33.47666673435731, 8.11416664970375, 2.089194444444444], [33.31000006835822, 8.11416664970375, 2.416583333333334], [33.143333402359126, 8.11416664970375, 5.808194444444444], [32.97666673636004, 8.11416664970375, 5.98], [36.64333338834001, 8.280833315714812, 4.617638888888889], [36.47666672234092, 8.280833315714812, 3.679305555555556], [36.31000005634183, 8.280833315714812, 3.933222222222222], [36.14333339034274, 8.280833315714812, 4.532472222222222], [35.97666672434365, 8.280833315714812, 4.728583333333334], [35.81000005834456, 8.280833315714812, 4.265222222222222], [35.64333339234547, 8.280833315714812, 4.361333333333334], [35.47666672634638, 8.280833315714812, 3.573527777777778], [35.31000006034729, 8.280833315714812, 2.78475], [35.143333394348204, 8.280833315714812, 3.933694444444444], [34.976666728349116, 8.280833315714812, 3.241055555555555], [34.81000006235003, 8.280833315714812, 5.259888888888889], [34.64333339635093, 8.280833315714812, 2.3195], [34.476666730351845, 8.280833315714812, 1.985833333333333], [34.31000006435276, 8.280833315714812, 1.328222222222222], [34.14333339835366, 8.280833315714812, 0.873472222222222], [33.97666673235457, 8.280833315714812, 1.601861111111111], [33.810000066355485, 8.280833315714812, 2.139444444444444], [33.6433334003564, 8.280833315714812, 1.911805555555556], [33.47666673435731, 8.280833315714812, 1.868527777777778], [33.31000006835822, 8.280833315714812, 1.828638888888889], [33.143333402359126, 8.280833315714812, 5.98], [32.97666673636004, 8.280833315714812, 5.98], [32.81000007036095, 8.280833315714812, 5.98], [32.643333404361854, 8.280833315714812, 40.24511111111111], [32.476666738362766, 8.280833315714812, 40.11369444444444], [36.8100000543391, 8.447499981725876, 3.830333333333334], [36.64333338834001, 8.447499981725876, 3.445722222222222], [36.47666672234092, 8.447499981725876, 2.793916666666667], [36.31000005634183, 8.447499981725876, 3.359666666666667], [36.14333339034274, 8.447499981725876, 2.857388888888889], [35.97666672434365, 8.447499981725876, 3.139527777777777], [35.81000005834456, 8.447499981725876, 5.463527777777778], [35.64333339234547, 8.447499981725876, 3.981916666666666], [35.47666672634638, 8.447499981725876, 3.586], [35.31000006034729, 8.447499981725876, 2.662277777777778], [35.143333394348204, 8.447499981725876, 2.005472222222222], [34.976666728349116, 8.447499981725876, 1.479777777777778], [34.81000006235003, 8.447499981725876, 1.332027777777778], [34.64333339635093, 8.447499981725876, 1.18825], [34.476666730351845, 8.447499981725876, 1.344055555555556], [34.31000006435276, 8.447499981725876, 0.458611111111111], [34.14333339835366, 8.447499981725876, 0.949611111111111], [33.97666673235457, 8.447499981725876, 0.901305555555556], [33.810000066355485, 8.447499981725876, 0.811388888888889], [33.6433334003564, 8.447499981725876, 1.2435], [33.47666673435731, 8.447499981725876, 1.405222222222222], [33.31000006835822, 8.447499981725876, 1.480694444444445], [33.143333402359126, 8.447499981725876, 1.482027777777778], [32.97666673636004, 8.447499981725876, 6.348416666666666], [32.81000007036095, 8.447499981725876, 6.348416666666666], [32.643333404361854, 8.447499981725876, 6.348416666666666], [32.476666738362766, 8.447499981725876, 40.48211111111111], [36.97666672033819, 8.61416664773694, 3.536], [36.8100000543391, 8.61416664773694, 3.049611111111111], [36.64333338834001, 8.61416664773694, 2.586722222222222], [36.47666672234092, 8.61416664773694, 2.358777777777778], [36.31000005634183, 8.61416664773694, 2.877583333333333], [36.14333339034274, 8.61416664773694, 2.539277777777778], [35.97666672434365, 8.61416664773694, 2.754888888888889], [35.81000005834456, 8.61416664773694, 3.3365], [35.64333339234547, 8.61416664773694, 3.645638888888889], [35.47666672634638, 8.61416664773694, 3.483805555555556], [35.31000006034729, 8.61416664773694, 2.645416666666667], [35.143333394348204, 8.61416664773694, 2.024916666666666], [34.976666728349116, 8.61416664773694, 1.473222222222222], [34.81000006235003, 8.61416664773694, 1.361777777777778], [34.64333339635093, 8.61416664773694, 0.846805555555555], [34.476666730351845, 8.61416664773694, 0.407194444444444], [34.31000006435276, 8.61416664773694, 0.275083333333333], [34.14333339835366, 8.61416664773694, 1.148333333333333], [33.97666673235457, 8.61416664773694, 1.673111111111111], [33.810000066355485, 8.61416664773694, 0.666611111111111], [33.6433334003564, 8.61416664773694, 0.699083333333333], [33.47666673435731, 8.61416664773694, 1.02575], [33.31000006835822, 8.61416664773694, 1.024694444444445], [33.143333402359126, 8.61416664773694, 1.062694444444444], [32.97666673636004, 8.61416664773694, 1.06025], [32.81000007036095, 8.61416664773694, 1.770888888888889], [32.643333404361854, 8.61416664773694, 1.770888888888889], [32.476666738362766, 8.61416664773694, 40.45911111111111], [32.31000007236368, 8.61416664773694, 13.557805555555555], [36.97666672033819, 8.780833313748003, 2.452555555555556], [36.8100000543391, 8.780833313748003, 2.703861111111111], [36.64333338834001, 8.780833313748003, 1.895833333333333], [36.47666672234092, 8.780833313748003, 1.798694444444444], [36.31000005634183, 8.780833313748003, 2.221722222222222], [36.14333339034274, 8.780833313748003, 2.134527777777778], [35.97666672434365, 8.780833313748003, 2.877666666666667], [35.81000005834456, 8.780833313748003, 3.557277777777778], [35.64333339234547, 8.780833313748003, 3.638305555555555], [35.47666672634638, 8.780833313748003, 3.203444444444444], [35.31000006034729, 8.780833313748003, 2.986027777777778], [35.143333394348204, 8.780833313748003, 2.079444444444444], [34.976666728349116, 8.780833313748003, 2.021722222222222], [34.81000006235003, 8.780833313748003, 2.36075], [34.64333339635093, 8.780833313748003, 1.050333333333333], [34.476666730351845, 8.780833313748003, 0.189694444444444], [34.31000006435276, 8.780833313748003, 0.563583333333333], [34.14333339835366, 8.780833313748003, 1.143361111111111], [33.97666673235457, 8.780833313748003, 1.264416666666667], [33.810000066355485, 8.780833313748003, 0.542472222222222], [33.6433334003564, 8.780833313748003, 0.327805555555556], [33.47666673435731, 8.780833313748003, 0.628083333333333], [33.31000006835822, 8.780833313748003, 0.962777777777778], [33.143333402359126, 8.780833313748003, 0.962777777777778], [32.97666673636004, 8.780833313748003, 1.770888888888889], [32.81000007036095, 8.780833313748003, 1.770888888888889], [32.643333404361854, 8.780833313748003, 1.770888888888889], [32.476666738362766, 8.780833313748003, 1.770888888888889], [32.31000007236368, 8.780833313748003, 13.557805555555555], [32.14333340636459, 8.780833313748003, 13.557805555555555], [37.47666671833546, 8.947499979759066, 3.804527777777778], [37.143333386337275, 8.947499979759066, 2.766138888888889], [36.97666672033819, 8.947499979759066, 2.122166666666667], [36.8100000543391, 8.947499979759066, 2.079916666666667], [36.64333338834001, 8.947499979759066, 1.108638888888889], [36.47666672234092, 8.947499979759066, 1.759277777777778], [36.31000005634183, 8.947499979759066, 1.755055555555555], [36.14333339034274, 8.947499979759066, 2.228305555555556], [35.97666672434365, 8.947499979759066, 2.846444444444445], [35.81000005834456, 8.947499979759066, 3.639111111111111], [35.64333339234547, 8.947499979759066, 3.481055555555555], [35.47666672634638, 8.947499979759066, 2.785611111111111], [35.31000006034729, 8.947499979759066, 2.017222222222222], [35.143333394348204, 8.947499979759066, 2.117944444444444], [34.976666728349116, 8.947499979759066, 1.850638888888889], [34.81000006235003, 8.947499979759066, 1.283611111111111], [34.64333339635093, 8.947499979759066, 0.614805555555556], [34.476666730351845, 8.947499979759066, 0.57675], [34.31000006435276, 8.947499979759066, 0.750055555555555], [34.14333339835366, 8.947499979759066, 1.597777777777778], [33.97666673235457, 8.947499979759066, 1.306916666666667], [33.810000066355485, 8.947499979759066, 0.381055555555556], [33.6433334003564, 8.947499979759066, 0.125916666666667], [33.47666673435731, 8.947499979759066, 0.219138888888889], [33.31000006835822, 8.947499979759066, 0.269361111111111], [33.143333402359126, 8.947499979759066, 1.711611111111111], [32.97666673636004, 8.947499979759066, 1.770888888888889], [32.81000007036095, 8.947499979759066, 1.770888888888889], [32.643333404361854, 8.947499979759066, 1.770888888888889], [32.476666738362766, 8.947499979759066, 4.160611111111112], [32.31000007236368, 8.947499979759066, 13.557805555555555], [32.14333340636459, 8.947499979759066, 13.555555555555555], [37.31000005233637, 9.11416664577013, 3.804527777777778], [37.143333386337275, 9.11416664577013, 2.760194444444445], [36.97666672033819, 9.11416664577013, 1.790805555555555], [36.8100000543391, 9.11416664577013, 1.324333333333333], [36.64333338834001, 9.11416664577013, 0.809722222222222], [36.47666672234092, 9.11416664577013, 1.38375], [36.31000005634183, 9.11416664577013, 1.386194444444445], [36.14333339034274, 9.11416664577013, 2.056138888888889], [35.97666672434365, 9.11416664577013, 2.781027777777778], [35.81000005834456, 9.11416664577013, 3.193444444444444], [35.64333339234547, 9.11416664577013, 3.133138888888888], [35.47666672634638, 9.11416664577013, 2.347833333333333], [35.31000006034729, 9.11416664577013, 1.814], [35.143333394348204, 9.11416664577013, 1.670027777777778], [34.976666728349116, 9.11416664577013, 1.228555555555556], [34.81000006235003, 9.11416664577013, 0.846416666666667], [34.64333339635093, 9.11416664577013, 1.00375], [34.476666730351845, 9.11416664577013, 0.816305555555556], [34.31000006435276, 9.11416664577013, 1.136527777777778], [34.14333339835366, 9.11416664577013, 1.301861111111111], [33.97666673235457, 9.11416664577013, 0.589277777777778], [33.810000066355485, 9.11416664577013, 0.29925], [33.6433334003564, 9.11416664577013, 0.524444444444444], [33.47666673435731, 9.11416664577013, 0.163722222222222], [33.31000006835822, 9.11416664577013, 0.676888888888889], [33.143333402359126, 9.11416664577013, 1.558083333333333], [32.97666673636004, 9.11416664577013, 1.770888888888889], [32.81000007036095, 9.11416664577013, 1.770888888888889], [32.643333404361854, 9.11416664577013, 1.770888888888889], [32.476666738362766, 9.11416664577013, 3.438777777777778], [32.31000007236368, 9.11416664577013, 3.867055555555555], [32.14333340636459, 9.11416664577013, 15.51972222222222], [31.976666740365502, 9.11416664577013, 15.51972222222222], [31.81000007436641, 9.11416664577013, 15.452694444444443], [31.64333340836732, 9.11416664577013, 14.99375], [37.31000005233637, 9.280833311781194, 3.394], [37.143333386337275, 9.280833311781194, 2.898944444444445], [36.97666672033819, 9.280833311781194, 1.934], [36.8100000543391, 9.280833311781194, 1.136277777777778], [36.64333338834001, 9.280833311781194, 1.056222222222222], [36.47666672234092, 9.280833311781194, 0.819638888888889], [36.31000005634183, 9.280833311781194, 1.409638888888889], [36.14333339034274, 9.280833311781194, 1.888611111111111], [35.97666672434365, 9.280833311781194, 2.28], [35.81000005834456, 9.280833311781194, 2.954305555555556], [35.64333339234547, 9.280833311781194, 2.529444444444445], [35.47666672634638, 9.280833311781194, 1.958361111111111], [35.31000006034729, 9.280833311781194, 1.301083333333333], [35.143333394348204, 9.280833311781194, 1.118055555555556], [34.976666728349116, 9.280833311781194, 0.591944444444444], [34.81000006235003, 9.280833311781194, 1.488694444444445], [34.64333339635093, 9.280833311781194, 1.787472222222222], [34.476666730351845, 9.280833311781194, 1.599638888888889], [34.31000006435276, 9.280833311781194, 1.816361111111111], [34.14333339835366, 9.280833311781194, 2.842861111111111], [33.97666673235457, 9.280833311781194, 0.665111111111111], [33.810000066355485, 9.280833311781194, 0.816222222222222], [33.6433334003564, 9.280833311781194, 0.698027777777778], [33.47666673435731, 9.280833311781194, 0.319611111111111], [33.31000006835822, 9.280833311781194, 0.942583333333333], [33.143333402359126, 9.280833311781194, 1.438027777777778], [32.97666673636004, 9.280833311781194, 1.457333333333333], [32.81000007036095, 9.280833311781194, 2.709194444444444], [32.643333404361854, 9.280833311781194, 3.259833333333333], [32.476666738362766, 9.280833311781194, 3.4355], [32.31000007236368, 9.280833311781194, 3.864944444444444], [32.14333340636459, 9.280833311781194, 3.919583333333334], [31.976666740365502, 9.280833311781194, 5.027055555555555], [31.81000007436641, 9.280833311781194, 5.028055555555556], [31.64333340836732, 9.280833311781194, 6.338666666666667], [31.47666674236823, 9.280833311781194, 6.838944444444445], [31.310000076369143, 9.280833311781194, 6.838944444444445], [31.14333341037005, 9.280833311781194, 12.302472222222223], [30.97666674437096, 9.280833311781194, 12.302472222222223], [37.31000005233637, 9.447499977792257, 2.992833333333334], [37.143333386337275, 9.447499977792257, 3.129444444444445], [36.97666672033819, 9.447499977792257, 2.654611111111111], [36.8100000543391, 9.447499977792257, 1.244361111111111], [36.64333338834001, 9.447499977792257, 0.716277777777778], [36.47666672234092, 9.447499977792257, 0.875361111111111], [36.31000005634183, 9.447499977792257, 1.656861111111111], [36.14333339034274, 9.447499977792257, 1.854888888888889], [35.97666672434365, 9.447499977792257, 2.429944444444444], [35.81000005834456, 9.447499977792257, 2.54975], [35.64333339234547, 9.447499977792257, 2.436138888888889], [35.47666672634638, 9.447499977792257, 1.644611111111111], [35.31000006034729, 9.447499977792257, 1.257444444444445], [35.143333394348204, 9.447499977792257, 0.62425], [34.976666728349116, 9.447499977792257, 0.649666666666667], [34.81000006235003, 9.447499977792257, 1.631916666666666], [34.64333339635093, 9.447499977792257, 1.970694444444444], [34.476666730351845, 9.447499977792257, 2.404833333333333], [34.31000006435276, 9.447499977792257, 1.460194444444444], [34.14333339835366, 9.447499977792257, 1.690972222222222], [33.97666673235457, 9.447499977792257, 1.292777777777778], [33.810000066355485, 9.447499977792257, 0.859361111111111], [33.6433334003564, 9.447499977792257, 0.97225], [33.47666673435731, 9.447499977792257, 0.658027777777778], [33.31000006835822, 9.447499977792257, 0.997888888888889], [33.143333402359126, 9.447499977792257, 0.997888888888889], [32.97666673636004, 9.447499977792257, 2.772944444444444], [32.81000007036095, 9.447499977792257, 2.971888888888889], [32.643333404361854, 9.447499977792257, 3.370472222222223], [32.476666738362766, 9.447499977792257, 3.441444444444445], [32.31000007236368, 9.447499977792257, 3.893805555555556], [32.14333340636459, 9.447499977792257, 4.04525], [31.976666740365502, 9.447499977792257, 4.726333333333333], [31.81000007436641, 9.447499977792257, 4.727361111111111], [31.64333340836732, 9.447499977792257, 4.875], [31.47666674236823, 9.447499977792257, 6.910833333333333], [31.310000076369143, 9.447499977792257, 6.75375], [31.14333341037005, 9.447499977792257, 12.302472222222223], [30.97666674437096, 9.447499977792257, 12.302472222222223], [30.81000007837187, 9.447499977792257, 12.342138888888888], [30.643333412372783, 9.447499977792257, 9.826694444444446], [30.476666746373695, 9.447499977792257, 9.523222222222222], [30.310000080374603, 9.447499977792257, 8.211555555555556], [37.31000005233637, 9.614166643803319, 1.802777777777778], [37.143333386337275, 9.614166643803319, 2.319611111111111], [36.97666672033819, 9.614166643803319, 2.695805555555556], [36.8100000543391, 9.614166643803319, 1.498555555555556], [36.64333338834001, 9.614166643803319, 0.098111111111111], [36.47666672234092, 9.614166643803319, 0.748083333333333], [36.31000005634183, 9.614166643803319, 1.093888888888889], [36.14333339034274, 9.614166643803319, 1.963861111111111], [35.97666672434365, 9.614166643803319, 2.420111111111111], [35.81000005834456, 9.614166643803319, 2.380555555555556], [35.64333339234547, 9.614166643803319, 1.829388888888889], [35.47666672634638, 9.614166643803319, 1.489583333333333], [35.31000006034729, 9.614166643803319, 1.670055555555556], [35.143333394348204, 9.614166643803319, 0.785111111111111], [34.976666728349116, 9.614166643803319, 0.772305555555556], [34.81000006235003, 9.614166643803319, 1.584888888888889], [34.64333339635093, 9.614166643803319, 1.925], [34.476666730351845, 9.614166643803319, 2.554777777777778], [34.31000006435276, 9.614166643803319, 2.99575], [34.14333339835366, 9.614166643803319, 1.087111111111111], [33.97666673235457, 9.614166643803319, 1.071361111111111], [33.810000066355485, 9.614166643803319, 1.002805555555556], [33.6433334003564, 9.614166643803319, 1.134694444444444], [33.47666673435731, 9.614166643803319, 1.416638888888889], [33.31000006835822, 9.614166643803319, 1.594694444444444], [33.143333402359126, 9.614166643803319, 1.889333333333333], [32.97666673636004, 9.614166643803319, 2.709194444444444], [32.81000007036095, 9.614166643803319, 2.917527777777778], [32.643333404361854, 9.614166643803319, 3.40475], [32.476666738362766, 9.614166643803319, 3.458333333333333], [32.31000007236368, 9.614166643803319, 3.987111111111111], [32.14333340636459, 9.614166643803319, 4.04525], [31.976666740365502, 9.614166643803319, 4.255916666666667], [31.81000007436641, 9.614166643803319, 4.51425], [31.64333340836732, 9.614166643803319, 4.487944444444445], [31.47666674236823, 9.614166643803319, 4.461416666666667], [31.310000076369143, 9.614166643803319, 5.451583333333334], [31.14333341037005, 9.614166643803319, 5.472055555555556], [30.97666674437096, 9.614166643803319, 5.468416666666666], [30.81000007837187, 9.614166643803319, 12.342138888888888], [30.643333412372783, 9.614166643803319, 5.594305555555556], [30.476666746373695, 9.614166643803319, 5.715888888888888], [30.310000080374603, 9.614166643803319, 5.844416666666667], [37.31000005233637, 9.780833309814383, 1.412638888888889], [37.143333386337275, 9.780833309814383, 1.205638888888889], [36.97666672033819, 9.780833309814383, 1.508555555555556], [36.8100000543391, 9.780833309814383, 1.087222222222222], [36.64333338834001, 9.780833309814383, 0.311611111111111], [36.47666672234092, 9.780833309814383, 0.858166666666667], [36.31000005634183, 9.780833309814383, 1.261], [36.14333339034274, 9.780833309814383, 2.055555555555555], [35.97666672434365, 9.780833309814383, 2.224472222222222], [35.81000005834456, 9.780833309814383, 1.454861111111111], [35.64333339234547, 9.780833309814383, 1.408666666666667], [35.47666672634638, 9.780833309814383, 1.569944444444445], [35.31000006034729, 9.780833309814383, 1.842972222222222], [35.143333394348204, 9.780833309814383, 1.225416666666667], [34.976666728349116, 9.780833309814383, 1.672638888888889], [34.81000006235003, 9.780833309814383, 1.688027777777778], [34.64333339635093, 9.780833309814383, 2.121416666666667], [34.476666730351845, 9.780833309814383, 1.729], [34.31000006435276, 9.780833309814383, 1.496555555555556], [34.14333339835366, 9.780833309814383, 0.726777777777778], [33.97666673235457, 9.780833309814383, 0.857444444444445], [33.810000066355485, 9.780833309814383, 0.8695], [33.6433334003564, 9.780833309814383, 1.304861111111111], [33.47666673435731, 9.780833309814383, 1.327361111111111], [33.31000006835822, 9.780833309814383, 1.411833333333333], [33.143333402359126, 9.780833309814383, 1.924972222222222], [32.97666673636004, 9.780833309814383, 2.428111111111111], [32.81000007036095, 9.780833309814383, 2.848388888888889], [32.643333404361854, 9.780833309814383, 3.337944444444445], [32.476666738362766, 9.780833309814383, 3.49175], [32.31000007236368, 9.780833309814383, 3.957777777777778], [32.14333340636459, 9.780833309814383, 4.074055555555556], [31.976666740365502, 9.780833309814383, 4.18713888888889], [31.81000007436641, 9.780833309814383, 3.9975], [31.64333340836732, 9.780833309814383, 4.309583333333333], [31.47666674236823, 9.780833309814383, 4.3525], [31.310000076369143, 9.780833309814383, 5.462472222222222], [31.14333341037005, 9.780833309814383, 5.478944444444445], [30.97666674437096, 9.780833309814383, 5.468416666666666], [30.81000007837187, 9.780833309814383, 5.462138888888889], [30.643333412372783, 9.780833309814383, 5.594305555555556], [30.476666746373695, 9.780833309814383, 5.638944444444445], [30.310000080374603, 9.780833309814383, 5.740638888888889], [37.31000005233637, 9.947499975825446, 0.9485], [37.143333386337275, 9.947499975825446, 0.797944444444444], [36.97666672033819, 9.947499975825446, 0.743583333333333], [36.8100000543391, 9.947499975825446, 0.507666666666667], [36.64333338834001, 9.947499975825446, 0.544666666666667], [36.47666672234092, 9.947499975825446, 0.86775], [36.31000005634183, 9.947499975825446, 1.275972222222222], [36.14333339034274, 9.947499975825446, 1.631472222222222], [35.97666672434365, 9.947499975825446, 1.387777777777778], [35.81000005834456, 9.947499975825446, 1.291277777777778], [35.64333339234547, 9.947499975825446, 0.996777777777778], [35.47666672634638, 9.947499975825446, 1.437194444444444], [35.31000006034729, 9.947499975825446, 2.010083333333333], [35.143333394348204, 9.947499975825446, 1.812583333333333], [34.976666728349116, 9.947499975825446, 2.150944444444444], [34.81000006235003, 9.947499975825446, 2.167972222222222], [34.64333339635093, 9.947499975825446, 2.061333333333333], [34.476666730351845, 9.947499975825446, 1.315333333333333], [34.31000006435276, 9.947499975825446, 1.485694444444444], [34.14333339835366, 9.947499975825446, 0.923], [33.97666673235457, 9.947499975825446, 0.521888888888889], [33.810000066355485, 9.947499975825446, 0.530444444444444], [33.6433334003564, 9.947499975825446, 0.855138888888889], [33.47666673435731, 9.947499975825446, 1.314583333333333], [33.31000006835822, 9.947499975825446, 0.962277777777778], [33.143333402359126, 9.947499975825446, 1.083333333333333], [32.97666673636004, 9.947499975825446, 2.019527777777778], [32.81000007036095, 9.947499975825446, 2.124472222222222], [32.643333404361854, 9.947499975825446, 2.513583333333334], [32.476666738362766, 9.947499975825446, 2.620611111111111], [32.31000007236368, 9.947499975825446, 3.07375], [32.14333340636459, 9.947499975825446, 3.122361111111111], [31.976666740365502, 9.947499975825446, 3.485611111111111], [31.81000007436641, 9.947499975825446, 3.716361111111111], [31.64333340836732, 9.947499975825446, 3.97875], [31.47666674236823, 9.947499975825446, 4.013305555555555], [31.310000076369143, 9.947499975825446, 4.479277777777778], [31.14333341037005, 9.947499975825446, 5.481138888888888], [30.97666674437096, 9.947499975825446, 5.265916666666667], [30.81000007837187, 9.947499975825446, 5.225361111111111], [30.643333412372783, 9.947499975825446, 5.487833333333334], [30.476666746373695, 9.947499975825446, 5.503], [30.310000080374603, 9.947499975825446, 8.583777777777778], [37.31000005233637, 10.11416664183651, 1.016777777777778], [37.143333386337275, 10.11416664183651, 0.857527777777778], [36.97666672033819, 10.11416664183651, 0.588027777777778], [36.8100000543391, 10.11416664183651, 0.167638888888889], [36.64333338834001, 10.11416664183651, 0.4255], [36.47666672234092, 10.11416664183651, 0.908277777777778], [36.31000005634183, 10.11416664183651, 1.586305555555555], [36.14333339034274, 10.11416664183651, 1.200111111111111], [35.97666672434365, 10.11416664183651, 0.923861111111111], [35.81000005834456, 10.11416664183651, 0.529388888888889], [35.64333339234547, 10.11416664183651, 0.814416666666667], [35.47666672634638, 10.11416664183651, 1.386638888888889], [35.31000006034729, 10.11416664183651, 1.765583333333333], [35.143333394348204, 10.11416664183651, 1.804972222222222], [34.976666728349116, 10.11416664183651, 1.81575], [34.81000006235003, 10.11416664183651, 1.913111111111111], [34.64333339635093, 10.11416664183651, 1.524583333333333], [34.476666730351845, 10.11416664183651, 1.273833333333333], [34.31000006435276, 10.11416664183651, 1.15925], [34.14333339835366, 10.11416664183651, 0.9165], [33.97666673235457, 10.11416664183651, 0.388833333333333], [33.810000066355485, 10.11416664183651, 0.371888888888889], [33.6433334003564, 10.11416664183651, 1.024805555555556], [33.47666673435731, 10.11416664183651, 0.9445], [33.31000006835822, 10.11416664183651, 1.056777777777778], [33.143333402359126, 10.11416664183651, 0.829583333333333], [32.97666673636004, 10.11416664183651, 1.38625], [32.81000007036095, 10.11416664183651, 1.887222222222222], [32.643333404361854, 10.11416664183651, 1.954777777777778], [32.476666738362766, 10.11416664183651, 2.092666666666667], [32.31000007236368, 10.11416664183651, 3.178638888888889], [32.14333340636459, 10.11416664183651, 3.101944444444444], [31.976666740365502, 10.11416664183651, 3.05125], [31.81000007436641, 10.11416664183651, 3.57875], [31.64333340836732, 10.11416664183651, 3.665527777777778], [31.47666674236823, 10.11416664183651, 3.976583333333333], [31.310000076369143, 10.11416664183651, 4.857694444444445], [31.14333341037005, 10.11416664183651, 4.759194444444444], [30.97666674437096, 10.11416664183651, 6.265833333333333], [30.81000007837187, 10.11416664183651, 5.119249999999999], [30.643333412372783, 10.11416664183651, 5.451027777777778], [30.476666746373695, 10.11416664183651, 5.784305555555556], [37.143333386337275, 10.280833307847573, 1.528888888888889], [36.97666672033819, 10.280833307847573, 0.276805555555556], [36.8100000543391, 10.280833307847573, 0.154194444444444], [36.64333338834001, 10.280833307847573, 0.452805555555556], [36.47666672234092, 10.280833307847573, 0.896222222222222], [36.31000005634183, 10.280833307847573, 0.993111111111111], [36.14333339034274, 10.280833307847573, 0.753611111111111], [35.97666672434365, 10.280833307847573, 0.238166666666667], [35.81000005834456, 10.280833307847573, 1.178388888888889], [35.64333339234547, 10.280833307847573, 0.942666666666667], [35.47666672634638, 10.280833307847573, 1.256944444444444], [35.31000006034729, 10.280833307847573, 1.903916666666667], [35.143333394348204, 10.280833307847573, 1.463416666666667], [34.976666728349116, 10.280833307847573, 1.044055555555556], [34.81000006235003, 10.280833307847573, 1.399388888888889], [34.64333339635093, 10.280833307847573, 1.079861111111111], [34.476666730351845, 10.280833307847573, 0.9505], [34.31000006435276, 10.280833307847573, 1.304277777777778], [33.810000066355485, 10.280833307847573, 0.5375], [33.6433334003564, 10.280833307847573, 0.598027777777778], [33.47666673435731, 10.280833307847573, 0.758361111111111], [33.31000006835822, 10.280833307847573, 0.365777777777778], [33.143333402359126, 10.280833307847573, 0.579305555555556], [32.97666673636004, 10.280833307847573, 0.990833333333333], [32.81000007036095, 10.280833307847573, 1.389361111111111], [32.643333404361854, 10.280833307847573, 1.405777777777778], [32.476666738362766, 10.280833307847573, 1.697694444444444], [32.31000007236368, 10.280833307847573, 2.117333333333333], [32.14333340636459, 10.280833307847573, 2.390194444444445], [31.976666740365502, 10.280833307847573, 3.068944444444445], [31.81000007436641, 10.280833307847573, 3.461555555555555], [31.64333340836732, 10.280833307847573, 3.633805555555556], [31.47666674236823, 10.280833307847573, 3.895027777777778], [31.310000076369143, 10.280833307847573, 4.796666666666667], [31.14333341037005, 10.280833307847573, 5.029888888888888], [30.97666674437096, 10.280833307847573, 5.48586111111111], [30.81000007837187, 10.280833307847573, 5.481611111111111], [30.643333412372783, 10.280833307847573, 5.18275], [36.8100000543391, 10.447499973858637, 0.209944444444444], [36.64333338834001, 10.447499973858637, 0.356305555555556], [36.47666672234092, 10.447499973858637, 0.764305555555556], [36.31000005634183, 10.447499973858637, 0.326222222222222], [36.14333339034274, 10.447499973858637, 0.640861111111111], [35.97666672434365, 10.447499973858637, 0.648083333333333], [35.81000005834456, 10.447499973858637, 0.846861111111111], [35.64333339234547, 10.447499973858637, 0.902555555555555], [35.47666672634638, 10.447499973858637, 1.642305555555556], [35.31000006034729, 10.447499973858637, 1.471166666666667], [35.143333394348204, 10.447499973858637, 1.635027777777778], [34.976666728349116, 10.447499973858637, 0.9965], [34.81000006235003, 10.447499973858637, 1.013916666666667], [34.64333339635093, 10.447499973858637, 0.512722222222222], [34.476666730351845, 10.447499973858637, 0.456805555555556], [33.6433334003564, 10.447499973858637, 0.946361111111111], [33.47666673435731, 10.447499973858637, 0.5035], [33.31000006835822, 10.447499973858637, 0.186722222222222], [33.143333402359126, 10.447499973858637, 0.391638888888889], [32.97666673636004, 10.447499973858637, 0.753305555555556], [32.81000007036095, 10.447499973858637, 1.238694444444445], [32.643333404361854, 10.447499973858637, 1.793333333333333], [32.476666738362766, 10.447499973858637, 2.47375], [32.31000007236368, 10.447499973858637, 2.185472222222222], [32.14333340636459, 10.447499973858637, 2.564388888888888], [31.976666740365502, 10.447499973858637, 3.10775], [31.81000007436641, 10.447499973858637, 3.508444444444444], [36.8100000543391, 10.6141666398697, 0.512944444444444], [36.64333338834001, 10.6141666398697, 0.380388888888889], [36.47666672234092, 10.6141666398697, 0.344638888888889], [36.31000005634183, 10.6141666398697, 0.361416666666667], [35.97666672434365, 10.6141666398697, 0.504333333333333], [35.81000005834456, 10.6141666398697, 0.26475], [35.64333339234547, 10.6141666398697, 0.627055555555556], [35.47666672634638, 10.6141666398697, 0.898388888888889], [35.31000006034729, 10.6141666398697, 1.050027777777778], [35.143333394348204, 10.6141666398697, 1.192638888888889], [34.976666728349116, 10.6141666398697, 0.972138888888889], [34.81000006235003, 10.6141666398697, 0.421888888888889], [34.64333339635093, 10.6141666398697, 0.471555555555556], [34.476666730351845, 10.6141666398697, 0.31625], [33.6433334003564, 10.6141666398697, 0.96975], [33.47666673435731, 10.6141666398697, 0.525805555555556], [33.31000006835822, 10.6141666398697, 0.379722222222222], [33.143333402359126, 10.6141666398697, 0.465666666666667], [32.97666673636004, 10.6141666398697, 1.040916666666667], [32.81000007036095, 10.6141666398697, 1.471111111111111], [32.643333404361854, 10.6141666398697, 1.674055555555556], [32.476666738362766, 10.6141666398697, 2.578944444444445], [32.31000007236368, 10.6141666398697, 2.567416666666667], [32.14333340636459, 10.6141666398697, 2.693611111111111], [31.976666740365502, 10.6141666398697, 3.358305555555555], [31.81000007436641, 10.6141666398697, 3.86475], [37.143333386337275, 10.780833305880762, 2.213888888888889], [36.97666672033819, 10.780833305880762, 1.564138888888889], [36.8100000543391, 10.780833305880762, 1.647111111111111], [36.64333338834001, 10.780833305880762, 0.866722222222222], [36.47666672234092, 10.780833305880762, 0.19775], [35.81000005834456, 10.780833305880762, 0.138722222222222], [35.64333339234547, 10.780833305880762, 0.408166666666667], [35.47666672634638, 10.780833305880762, 0.916388888888889], [35.31000006034729, 10.780833305880762, 1.257222222222222], [35.143333394348204, 10.780833305880762, 0.96725], [34.976666728349116, 10.780833305880762, 0.893722222222222], [34.81000006235003, 10.780833305880762, 0.315], [34.64333339635093, 10.780833305880762, 0.29575], [33.97666673235457, 10.780833305880762, 0.409333333333333], [33.810000066355485, 10.780833305880762, 0.247111111111111], [33.6433334003564, 10.780833305880762, 1.069361111111111], [33.47666673435731, 10.780833305880762, 0.834], [33.31000006835822, 10.780833305880762, 0.730583333333333], [33.143333402359126, 10.780833305880762, 0.750111111111111], [32.97666673636004, 10.780833305880762, 1.616138888888889], [32.81000007036095, 10.780833305880762, 1.73275], [32.643333404361854, 10.780833305880762, 1.851166666666667], [32.476666738362766, 10.780833305880762, 3.184861111111111], [32.31000007236368, 10.780833305880762, 3.186694444444444], [32.14333340636459, 10.780833305880762, 6.27075], [31.976666740365502, 10.780833305880762, 3.615138888888889], [37.143333386337275, 10.947499971891826, 2.136888888888889], [36.97666672033819, 10.947499971891826, 1.978194444444444], [36.8100000543391, 10.947499971891826, 1.161944444444444], [36.64333338834001, 10.947499971891826, 0.986361111111111], [35.81000005834456, 10.947499971891826, 0.095611111111111], [35.64333339234547, 10.947499971891826, 0.255972222222222], [35.47666672634638, 10.947499971891826, 0.533972222222222], [35.31000006034729, 10.947499971891826, 1.141111111111111], [35.143333394348204, 10.947499971891826, 1.669083333333333], [34.976666728349116, 10.947499971891826, 1.1595], [34.81000006235003, 10.947499971891826, 0.885416666666667], [34.64333339635093, 10.947499971891826, 4.411083333333334], [33.97666673235457, 10.947499971891826, 0.210416666666667], [33.810000066355485, 10.947499971891826, 0.331027777777778], [33.6433334003564, 10.947499971891826, 0.466305555555556], [33.47666673435731, 10.947499971891826, 0.371027777777778], [33.31000006835822, 10.947499971891826, 0.761666666666667], [33.143333402359126, 10.947499971891826, 0.829583333333333], [32.97666673636004, 10.947499971891826, 1.288694444444445], [32.81000007036095, 10.947499971891826, 2.212194444444444], [32.643333404361854, 10.947499971891826, 2.129111111111111], [32.476666738362766, 10.947499971891826, 2.594555555555556], [32.31000007236368, 10.947499971891826, 2.790750000000001], [32.14333340636459, 10.947499971891826, 5.597722222222222], [37.143333386337275, 11.11416663790289, 2.419055555555556], [36.97666672033819, 11.11416663790289, 1.908972222222222], [36.8100000543391, 11.11416663790289, 1.387222222222222], [35.81000005834456, 11.11416663790289, 0.544194444444444], [35.64333339234547, 11.11416663790289, 0.556222222222222], [35.47666672634638, 11.11416663790289, 0.778555555555556], [35.31000006034729, 11.11416663790289, 1.128611111111111], [35.143333394348204, 11.11416663790289, 1.573805555555555], [34.81000006235003, 11.11416663790289, 5.501333333333333], [34.64333339635093, 11.11416663790289, 4.793138888888889], [33.810000066355485, 11.11416663790289, 0.486972222222222], [33.6433334003564, 11.11416663790289, 0.509777777777778], [33.47666673435731, 11.11416663790289, 0.228805555555556], [33.31000006835822, 11.11416663790289, 0.328416666666667], [33.143333402359126, 11.11416663790289, 0.791305555555555], [32.97666673636004, 11.11416663790289, 1.167444444444445], [32.81000007036095, 11.11416663790289, 1.693888888888889], [32.643333404361854, 11.11416663790289, 2.321444444444445], [32.476666738362766, 11.11416663790289, 2.668694444444444], [32.31000007236368, 11.11416663790289, 4.926111111111111], [32.14333340636459, 11.11416663790289, 5.245111111111112], [34.81000006235003, 11.280833303913953, 5.641333333333333], [34.64333339635093, 11.280833303913953, 5.193416666666666], [33.31000006835822, 11.280833303913953, 0.563055555555556], [33.143333402359126, 11.280833303913953, 0.833166666666667], [32.97666673636004, 11.280833303913953, 1.343861111111111], [32.81000007036095, 11.280833303913953, 2.099305555555556], [32.643333404361854, 11.280833303913953, 2.882583333333333], [32.476666738362766, 11.280833303913953, 3.725138888888889], [32.31000007236368, 11.280833303913953, 4.483361111111111], [34.64333339635093, 11.447499969925016, 5.50263888888889], [33.31000006835822, 11.447499969925016, 1.354472222222223], [33.143333402359126, 11.447499969925016, 1.087], [32.97666673636004, 11.447499969925016, 1.526333333333333], [32.81000007036095, 11.447499969925016, 2.158777777777778], [32.643333404361854, 11.447499969925016, 2.818611111111111], [32.476666738362766, 11.447499969925016, 3.589111111111111], [32.31000007236368, 11.447499969925016, 4.149527777777778], [33.143333402359126, 11.61416663593608, 8.533083333333332], [32.643333404361854, 11.61416663593608, 2.817444444444444], [32.476666738362766, 11.61416663593608, 6.490888888888889]],
+                {"blur": 1, "gradient": {"0.0": "#440154ff", "0.25": "#3a528bff", "0.5": "#21908cff", "0.75": "#5cc962ff", "1.0": "#fde725ff"}, "max": 2, "maxZoom": 6, "minOpacity": 0.1, "radius": 5}
+            ).addTo(map_0c2870fe24584d31be56a8cab886a2cc);
+        
+    
+    var color_map_fcd72a1eb09c41af8b3541d3a648bcfc = {};
+
+    
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.color = d3.scale.threshold()
+              .domain([0.095611111111111, 0.09942752171008673, 0.10324393230906245, 0.10706034290803818, 0.11087675350701391, 0.11469316410598965, 0.11850957470496537, 0.12232598530394109, 0.12614239590291682, 0.12995880650189257, 0.1337752171008683, 0.137591627699844, 0.14140803829881976, 0.14522444889779548, 0.1490408594967712, 0.15285727009574693, 0.15667368069472265, 0.1604900912936984, 0.16430650189267412, 0.16812291249164985, 0.1719393230906256, 0.17575573368960132, 0.17957214428857704, 0.1833885548875528, 0.18720496548652849, 0.19102137608550424, 0.19483778668447996, 0.19865419728345568, 0.20247060788243143, 0.20628701848140713, 0.21010342908038288, 0.2139198396793586, 0.21773625027833432, 0.22155266087731007, 0.22536907147628582, 0.22918548207526152, 0.23300189267423727, 0.23681830327321302, 0.2406347138721887, 0.24445112447116446, 0.24826753507014016, 0.2520839456691159, 0.25590035626809166, 0.25971676686706735, 0.2635331774660431, 0.2673495880650188, 0.27116599866399455, 0.2749824092629703, 0.278798819861946, 0.28261523046092174, 0.2864316410598975, 0.2902480516588732, 0.29406446225784894, 0.29788087285682463, 0.3016972834558004, 0.30551369405477613, 0.3093301046537518, 0.3131465152527276, 0.31696292585170327, 0.320779336450679, 0.32459574704965477, 0.32841215764863047, 0.3322285682476062, 0.33604497884658197, 0.33986138944555766, 0.3436778000445334, 0.3474942106435091, 0.35131062124248486, 0.3551270318414606, 0.3589434424404363, 0.36275985303941205, 0.3665762636383878, 0.3703926742373635, 0.37420908483633925, 0.378025495435315, 0.3818419060342907, 0.38565831663326644, 0.38947472723224213, 0.3932911378312179, 0.39710754843019364, 0.40092395902916933, 0.4047403696281451, 0.4085567802271208, 0.4123731908260965, 0.4161896014250723, 0.42000601202404797, 0.4238224226230237, 0.42763883322199947, 0.43145524382097517, 0.4352716544199509, 0.4390880650189266, 0.44290447561790236, 0.4467208862168781, 0.4505372968158538, 0.45435370741482956, 0.45817011801380525, 0.461986528612781, 0.46580293921175675, 0.46961934981073244, 0.4734357604097082, 0.47725217100868395, 0.48106858160765964, 0.4848849922066354, 0.4887014028056111, 0.49251781340458684, 0.4963342240035626, 0.5001506346025383, 0.503967045201514, 0.5077834558004898, 0.5115998663994655, 0.5154162769984413, 0.5192326875974169, 0.5230490981963927, 0.5268655087953684, 0.5306819193943442, 0.5344983299933199, 0.5383147405922956, 0.5421311511912713, 0.5459475617902471, 0.5497639723892228, 0.5535803829881986, 0.5573967935871742, 0.56121320418615, 0.5650296147851257, 0.5688460253841015, 0.5726624359830772, 0.576478846582053, 0.5802952571810286, 0.5841116677800043, 0.5879280783789801, 0.5917444889779558, 0.5955608995769316, 0.5993773101759072, 0.603193720774883, 0.6070101313738587, 0.6108265419728345, 0.6146429525718102, 0.618459363170786, 0.6222757737697616, 0.6260921843687374, 0.6299085949677131, 0.6337250055666889, 0.6375414161656646, 0.6413578267646404, 0.645174237363616, 0.6489906479625918, 0.6528070585615675, 0.6566234691605433, 0.660439879759519, 0.6642562903584946, 0.6680727009574704, 0.6718891115564462, 0.6757055221554219, 0.6795219327543977, 0.6833383433533733, 0.687154753952349, 0.6909711645513248, 0.6947875751503005, 0.6986039857492763, 0.7024203963482519, 0.7062368069472277, 0.7100532175462034, 0.7138696281451792, 0.7176860387441549, 0.7215024493431306, 0.7253188599421063, 0.7291352705410821, 0.7329516811400578, 0.7367680917390336, 0.7405845023380093, 0.744400912936985, 0.7482173235359607, 0.7520337341349365, 0.7558501447339122, 0.759666555332888, 0.7634829659318636, 0.7672993765308393, 0.7711157871298151, 0.7749321977287909, 0.7787486083277666, 0.7825650189267422, 0.786381429525718, 0.7901978401246937, 0.7940142507236695, 0.7978306613226452, 0.8016470719216209, 0.8054634825205966, 0.8092798931195724, 0.8130963037185481, 0.8169127143175239, 0.8207291249164995, 0.8245455355154753, 0.828361946114451, 0.8321783567134268, 0.8359947673124025, 0.8398111779113783, 0.8436275885103539, 0.8474439991093297, 0.8512604097083054, 0.8550768203072812, 0.8588932309062569, 0.8627096415052325, 0.8665260521042083, 0.870342462703184, 0.8741588733021598, 0.8779752839011356, 0.8817916945001112, 0.8856081050990869, 0.8894245156980627, 0.8932409262970384, 0.8970573368960142, 0.9008737474949898, 0.9046901580939656, 0.9085065686929413, 0.9123229792919171, 0.9161393898908928, 0.9199558004898685, 0.9237722110888442, 0.92758862168782, 0.9314050322867957, 0.9352214428857715, 0.9390378534847472, 0.9428542640837229, 0.9466706746826986, 0.9504870852816744, 0.9543034958806501, 0.9581199064796259, 0.9619363170786015, 0.9657527276775772, 0.969569138276553, 0.9733855488755287, 0.9772019594745045, 0.9810183700734801, 0.9848347806724559, 0.9886511912714316, 0.9924676018704074, 0.9962840124693831, 1.0001004230683588, 1.0039168336673345, 1.0077332442663103, 1.011549654865286, 1.0153660654642618, 1.0191824760632375, 1.0229988866622133, 1.026815297261189, 1.0306317078601648, 1.0344481184591405, 1.0382645290581163, 1.0420809396570918, 1.0458973502560676, 1.0497137608550433, 1.053530171454019, 1.0573465820529948, 1.0611629926519706, 1.0649794032509463, 1.068795813849922, 1.0726122244488978, 1.0764286350478736, 1.080245045646849, 1.0840614562458248, 1.0878778668448006, 1.0916942774437763, 1.095510688042752, 1.0993270986417278, 1.1031435092407036, 1.1069599198396793, 1.110776330438655, 1.1145927410376308, 1.1184091516366066, 1.1222255622355823, 1.126041972834558, 1.1298583834335338, 1.1336747940325096, 1.1374912046314853, 1.141307615230461, 1.1451240258294368, 1.1489404364284124, 1.1527568470273881, 1.1565732576263639, 1.1603896682253396, 1.1642060788243154, 1.1680224894232911, 1.1718389000222669, 1.1756553106212426, 1.1794717212202184, 1.1832881318191941, 1.1871045424181699, 1.1909209530171454, 1.1947373636161212, 1.198553774215097, 1.2023701848140727, 1.2061865954130484, 1.2100030060120242, 1.213819416611, 1.2176358272099757, 1.2214522378089514, 1.2252686484079272, 1.2290850590069027, 1.2329014696058784, 1.2367178802048542, 1.24053429080383, 1.2443507014028057, 1.2481671120017814, 1.2519835226007572, 1.255799933199733, 1.2596163437987087, 1.2634327543976844, 1.26724916499666, 1.2710655755956357, 1.2748819861946115, 1.2786983967935872, 1.282514807392563, 1.2863312179915387, 1.2901476285905145, 1.2939640391894902, 1.297780449788466, 1.3015968603874417, 1.3054132709864175, 1.309229681585393, 1.3130460921843687, 1.3168625027833445, 1.3206789133823202, 1.324495323981296, 1.3283117345802717, 1.3321281451792475, 1.3359445557782232, 1.339760966377199, 1.3435773769761747, 1.3473937875751503, 1.351210198174126, 1.3550266087731018, 1.3588430193720775, 1.3626594299710533, 1.366475840570029, 1.3702922511690048, 1.3741086617679805, 1.3779250723669563, 1.381741482965932, 1.3855578935649078, 1.3893743041638833, 1.393190714762859, 1.3970071253618348, 1.4008235359608106, 1.4046399465597863, 1.408456357158762, 1.4122727677577378, 1.4160891783567136, 1.4199055889556893, 1.423721999554665, 1.4275384101536406, 1.4313548207526163, 1.435171231351592, 1.4389876419505678, 1.4428040525495436, 1.4466204631485193, 1.450436873747495, 1.4542532843464708, 1.4580696949454466, 1.4618861055444223, 1.4657025161433979, 1.4695189267423736, 1.4733353373413494, 1.477151747940325, 1.4809681585393009, 1.4847845691382766, 1.4886009797372524, 1.4924173903362281, 1.4962338009352039, 1.5000502115341796, 1.5038666221331554, 1.507683032732131, 1.5114994433311066, 1.5153158539300824, 1.5191322645290581, 1.522948675128034, 1.5267650857270096, 1.5305814963259854, 1.5343979069249611, 1.538214317523937, 1.5420307281229126, 1.5458471387218882, 1.549663549320864, 1.5534799599198397, 1.5572963705188154, 1.5611127811177912, 1.564929191716767, 1.5687456023157427, 1.5725620129147184, 1.5763784235136942, 1.58019483411267, 1.5840112447116457, 1.5878276553106212, 1.591644065909597, 1.5954604765085727, 1.5992768871075485, 1.6030932977065242, 1.6069097083055, 1.6107261189044757, 1.6145425295034515, 1.6183589401024272, 1.622175350701403, 1.6259917613003785, 1.6298081718993542, 1.63362458249833, 1.6374409930973057, 1.6412574036962815, 1.6450738142952572, 1.648890224894233, 1.6527066354932087, 1.6565230460921845, 1.6603394566911602, 1.6641558672901358, 1.6679722778891115, 1.6717886884880873, 1.675605099087063, 1.6794215096860388, 1.6832379202850145, 1.6870543308839903, 1.690870741482966, 1.6946871520819418, 1.6985035626809175, 1.7023199732798933, 1.7061363838788688, 1.7099527944778445, 1.7137692050768203, 1.717585615675796, 1.7214020262747718, 1.7252184368737475, 1.7290348474727233, 1.732851258071699, 1.7366676686706748, 1.7404840792696505, 1.744300489868626, 1.7481169004676018, 1.7519333110665776, 1.7557497216655533, 1.759566132264529, 1.7633825428635048, 1.7671989534624806, 1.7710153640614563, 1.774831774660432, 1.7786481852594078, 1.7824645958583836, 1.786281006457359, 1.7900974170563348, 1.7939138276553106, 1.7977302382542864, 1.801546648853262, 1.8053630594522379, 1.8091794700512136, 1.8129958806501894, 1.816812291249165, 1.8206287018481409, 1.8244451124471164, 1.8282615230460921, 1.8320779336450679, 1.8358943442440436, 1.8397107548430194, 1.8435271654419951, 1.8473435760409709, 1.8511599866399466, 1.8549763972389224, 1.8587928078378981, 1.8626092184368737, 1.8664256290358494, 1.8702420396348252, 1.874058450233801, 1.8778748608327767, 1.8816912714317524, 1.8855076820307282, 1.889324092629704, 1.8931405032286797, 1.8969569138276554, 1.9007733244266312, 1.9045897350256067, 1.9084061456245824, 1.9122225562235582, 1.916038966822534, 1.9198553774215097, 1.9236717880204854, 1.9274881986194612, 1.931304609218437, 1.9351210198174127, 1.9389374304163884, 1.942753841015364, 1.9465702516143397, 1.9503866622133155, 1.9542030728122912, 1.958019483411267, 1.9618358940102427, 1.9656523046092185, 1.9694687152081942, 1.97328512580717, 1.9771015364061457, 1.9809179470051215, 1.984734357604097, 1.9885507682030727, 1.9923671788020485, 1.9961835894010242, 2.0])
+              .range(['#440154ff', '#440155ff', '#440255ff', '#440356ff', '#440457ff', '#450457ff', '#450558ff', '#450659ff', '#45075aff', '#45075aff', '#45085bff', '#45095cff', '#460a5dff', '#460a5dff', '#460b5eff', '#460c5fff', '#460d5fff', '#460e60ff', '#470e61ff', '#470f62ff', '#471062ff', '#471163ff', '#471164ff', '#471265ff', '#471365ff', '#481466ff', '#481467ff', '#481567ff', '#481668ff', '#481669ff', '#481769ff', '#48186aff', '#48186aff', '#48196bff', '#481a6cff', '#481a6cff', '#481b6dff', '#481c6dff', '#481c6eff', '#481d6fff', '#481e6fff', '#481e70ff', '#481f71ff', '#481f71ff', '#482072ff', '#482172ff', '#482173ff', '#482274ff', '#482374ff', '#482375ff', '#482475ff', '#482576ff', '#482577ff', '#482677ff', '#482778ff', '#472778ff', '#472878ff', '#472979ff', '#472979ff', '#472a79ff', '#472b7aff', '#472b7aff', '#472c7bff', '#472c7bff', '#462d7bff', '#462e7cff', '#462e7cff', '#462f7cff', '#46307dff', '#46307dff', '#46317eff', '#46327eff', '#46327eff', '#45337fff', '#45347fff', '#453480ff', '#453580ff', '#453680ff', '#453681ff', '#453781ff', '#453781ff', '#443882ff', '#443982ff', '#443982ff', '#443a82ff', '#443b83ff', '#433b83ff', '#433c83ff', '#433c83ff', '#433d84ff', '#433e84ff', '#423e84ff', '#423f85ff', '#423f85ff', '#424085ff', '#424185ff', '#414186ff', '#414286ff', '#414286ff', '#414386ff', '#414487ff', '#414487ff', '#404587ff', '#404687ff', '#404688ff', '#404788ff', '#3f4788ff', '#3f4888ff', '#3f4888ff', '#3f4989ff', '#3e4a89ff', '#3e4a89ff', '#3e4b89ff', '#3e4b89ff', '#3d4c89ff', '#3d4c8aff', '#3d4d8aff', '#3d4e8aff', '#3c4e8aff', '#3c4f8aff', '#3c4f8aff', '#3b508aff', '#3b508bff', '#3b518bff', '#3b528bff', '#3a528bff', '#3a538bff', '#3a538bff', '#3a548cff', '#39558cff', '#39558cff', '#39568cff', '#39568cff', '#38578cff', '#38578cff', '#38588cff', '#38588cff', '#37598cff', '#37598cff', '#375a8cff', '#375a8cff', '#375b8cff', '#365b8cff', '#365c8cff', '#365c8dff', '#365d8dff', '#355d8dff', '#355e8dff', '#355e8dff', '#355f8dff', '#345f8dff', '#34608dff', '#34608dff', '#34618dff', '#34618dff', '#33628dff', '#33628dff', '#33638dff', '#33638dff', '#32648dff', '#32648dff', '#32658dff', '#32658dff', '#31668dff', '#31668dff', '#31678dff', '#31678dff', '#31688dff', '#30688dff', '#30698dff', '#30698eff', '#306a8eff', '#2f6a8eff', '#2f6b8eff', '#2f6b8eff', '#2f6c8eff', '#2e6c8eff', '#2e6d8eff', '#2e6d8eff', '#2e6e8eff', '#2e6e8eff', '#2d6f8eff', '#2d6f8eff', '#2d708eff', '#2d708eff', '#2c718eff', '#2c718eff', '#2c728eff', '#2c728eff', '#2c738eff', '#2b738eff', '#2b738eff', '#2b748eff', '#2b748eff', '#2b758eff', '#2b758eff', '#2a768eff', '#2a768eff', '#2a778eff', '#2a778eff', '#2a788eff', '#29788eff', '#29798eff', '#29798eff', '#297a8eff', '#297a8eff', '#287b8eff', '#287b8eff', '#287c8eff', '#287c8eff', '#287d8eff', '#277d8eff', '#277e8eff', '#277e8eff', '#277f8eff', '#277f8eff', '#27808eff', '#26808eff', '#26818eff', '#26818eff', '#26828eff', '#26828eff', '#25838eff', '#25838eff', '#25848eff', '#25848dff', '#25858dff', '#24858dff', '#24868dff', '#24868dff', '#24878dff', '#24878dff', '#23888dff', '#23888dff', '#23898dff', '#23898dff', '#238a8dff', '#238a8dff', '#228b8dff', '#228b8dff', '#228c8dff', '#228c8dff', '#228d8dff', '#228d8dff', '#218e8cff', '#218e8cff', '#218e8cff', '#218f8cff', '#218f8cff', '#21908cff', '#21908cff', '#20918cff', '#20918cff', '#20928cff', '#20928cff', '#20938cff', '#20938cff', '#1f948bff', '#1f948bff', '#1f948bff', '#1f958bff', '#1f958bff', '#1f968bff', '#1f968bff', '#1f978bff', '#1f978bff', '#1f988bff', '#1f988aff', '#1f998aff', '#1f998aff', '#1f9a8aff', '#1f9a8aff', '#1f9b8aff', '#1f9b89ff', '#1f9c89ff', '#1f9c89ff', '#1f9d89ff', '#1f9d89ff', '#1f9e89ff', '#1f9e89ff', '#1f9f88ff', '#1f9f88ff', '#1fa088ff', '#1fa088ff', '#1fa188ff', '#1fa188ff', '#20a287ff', '#20a287ff', '#20a387ff', '#20a387ff', '#20a487ff', '#20a486ff', '#21a586ff', '#21a586ff', '#21a585ff', '#22a685ff', '#22a685ff', '#22a785ff', '#23a784ff', '#23a884ff', '#23a884ff', '#24a983ff', '#24a983ff', '#24aa83ff', '#25aa82ff', '#25ab82ff', '#26ab82ff', '#26ab81ff', '#26ac81ff', '#27ac81ff', '#27ad81ff', '#27ad80ff', '#28ae80ff', '#28ae80ff', '#28af7fff', '#29af7fff', '#29b07fff', '#2ab07eff', '#2bb07eff', '#2bb17eff', '#2cb17dff', '#2db27dff', '#2eb27cff', '#2eb37cff', '#2fb37cff', '#30b47bff', '#31b47bff', '#31b57aff', '#32b57aff', '#33b67aff', '#33b679ff', '#34b679ff', '#35b779ff', '#36b778ff', '#36b878ff', '#37b877ff', '#38b977ff', '#39b977ff', '#39ba76ff', '#3aba76ff', '#3bbb76ff', '#3bbb75ff', '#3cbb75ff', '#3dbc74ff', '#3ebc74ff', '#3fbd73ff', '#40bd73ff', '#41be72ff', '#42be71ff', '#43be71ff', '#44bf70ff', '#45bf70ff', '#46c06fff', '#47c06fff', '#48c16eff', '#49c16eff', '#4ac16dff', '#4bc26dff', '#4cc26cff', '#4dc36cff', '#4dc36bff', '#4ec36aff', '#4fc46aff', '#50c469ff', '#51c569ff', '#52c568ff', '#53c668ff', '#54c667ff', '#55c667ff', '#56c766ff', '#57c765ff', '#59c865ff', '#5ac864ff', '#5bc863ff', '#5cc963ff', '#5dc962ff', '#5ec961ff', '#60ca60ff', '#61ca60ff', '#62cb5fff', '#63cb5eff', '#64cb5eff', '#65cc5dff', '#66cc5cff', '#68cd5cff', '#69cd5bff', '#6acd5aff', '#6bce5aff', '#6cce59ff', '#6dce58ff', '#6ecf58ff', '#70cf57ff', '#71d056ff', '#72d055ff', '#73d055ff', '#74d154ff', '#76d153ff', '#77d152ff', '#78d252ff', '#7ad251ff', '#7bd250ff', '#7cd24fff', '#7dd34eff', '#7fd34eff', '#80d34dff', '#81d44cff', '#83d44bff', '#84d44aff', '#85d54aff', '#87d549ff', '#88d548ff', '#89d647ff', '#8ad646ff', '#8cd646ff', '#8dd645ff', '#8ed744ff', '#90d743ff', '#91d742ff', '#92d842ff', '#94d841ff', '#95d840ff', '#96d93fff', '#97d93eff', '#99d93dff', '#9ad93cff', '#9bd93cff', '#9dda3bff', '#9eda3aff', '#a0da39ff', '#a1da38ff', '#a2db37ff', '#a4db36ff', '#a5db35ff', '#a6db35ff', '#a8dc34ff', '#a9dc33ff', '#aadc32ff', '#acdc31ff', '#addc30ff', '#aedd2fff', '#b0dd2eff', '#b1dd2dff', '#b2dd2dff', '#b4de2cff', '#b5de2bff', '#b6de2aff', '#b8de29ff', '#b9de28ff', '#badf28ff', '#bcdf27ff', '#bddf27ff', '#bedf26ff', '#c0df25ff', '#c1e025ff', '#c3e024ff', '#c4e023ff', '#c5e023ff', '#c7e022ff', '#c8e122ff', '#c9e121ff', '#cbe120ff', '#cce120ff', '#cee11fff', '#cfe21fff', '#d0e21eff', '#d2e21dff', '#d3e21dff', '#d4e21cff', '#d6e21bff', '#d7e31bff', '#d9e31aff', '#dae31aff', '#dbe319ff', '#dde319ff', '#dee419ff', '#dfe41aff', '#e0e41aff', '#e2e41bff', '#e3e41bff', '#e4e41bff', '#e6e51cff', '#e7e51cff', '#e8e51dff', '#e9e51dff', '#ebe51eff', '#ece51eff', '#ede51fff', '#eee61fff', '#f0e620ff', '#f1e620ff', '#f2e621ff', '#f3e621ff', '#f5e621ff', '#f6e622ff', '#f7e722ff', '#f8e723ff', '#fae723ff', '#fbe724ff', '#fce724ff', '#fde725ff']);
+    
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x = d3.scale.linear()
+              .domain([0.095611111111111, 2.0])
+              .range([0, 400]);
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.legend = L.control({position: 'topright'});
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.legend.addTo(map_0c2870fe24584d31be56a8cab886a2cc);
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.xAxis = d3.svg.axis()
+        .scale(color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.095611111111111, '', 0.29607309941520454, '', 0.4965350877192981, '', 0.6969970760233917, '', 0.8974590643274852, '', 1.0979210526315788, '', 1.2983830409356725, '', 1.498845029239766, '', 1.6993070175438596, '', 1.899769005847953, '']);
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.g = color_map_fcd72a1eb09c41af8b3541d3a648bcfc.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.g.selectAll("rect")
+        .data(color_map_fcd72a1eb09c41af8b3541d3a648bcfc.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x(color_map_fcd72a1eb09c41af8b3541d3a648bcfc.color.domain()[i - 1]) : color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x.range()[0],
+            x1: i < color_map_fcd72a1eb09c41af8b3541d3a648bcfc.color.domain().length ? color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x(color_map_fcd72a1eb09c41af8b3541d3a648bcfc.color.domain()[i]) : color_map_fcd72a1eb09c41af8b3541d3a648bcfc.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_fcd72a1eb09c41af8b3541d3a648bcfc.g.call(color_map_fcd72a1eb09c41af8b3541d3a648bcfc.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('Traffic time to closest hospital (h)');
+</script>
