@@ -38,8 +38,10 @@ Datasets:
 
 ## Vizualisation
 
-To get a grasp of estimated time arrival to hospitals, choose the country and run the "make_viz" notebook and choose the map that suits best your work
+To get a grasp of estimated time arrival to hospitals and their location, choose the country and run the "make_viz" notebook and choose the map that suits best your work
 
 Here is an example for Tunisia
 
-![Tunisia_viz](Viz_Tunisia.png "Time Travel to Nearest Hospital for Tunisia")
+![Tunisia_viz](Viz_Tunisia.png | width=100)
+
+
