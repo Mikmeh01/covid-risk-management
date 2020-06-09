@@ -43,6 +43,6 @@ To get a grasp of estimated time arrival to hospitals and their location, choose
 Here is an example for Tunisia ( Follow this [link](https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html) to get an interactive map)
 
 <p align="center">
-<img src="https://github.com/Mikmeh01/covid-risk-management/blob/master/Viz_Tunisia.png" width="600"/>
+<img src="https://github.com/Mikmeh01/covid-risk-management/blob/master/Viz_Tunisia.png" width="500"/>
 </p>
  
