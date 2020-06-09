@@ -29,7 +29,8 @@ Code implemented in Python 3.6
 
 Clone and go to repository
 
-``` $ git clone https://github.com/Mikmeh01/covid-risk-management.git
+``` 
+$ git clone https://github.com/Mikmeh01/covid-risk-management.git
 $ cd covid-risk-management
 ```
 
