@@ -41,4 +41,4 @@ Datasets:
 To get a grasp of estimated time arrival to hospitals, choose the country and run the "make_viz" notebook and choose the map that suits best your work
 Here is a quick example for Tunisia
 
-![Tunisia_viz](https://github.com/Mikmeh01/covid-risk-managementblob/master/choropleth_TUN.html?raw=true "Time Travel to Nearest Hospital for Tunisia")
+![Tunisia_viz](https://github.com/Mikmeh01/covid-risk-management/blob/master/choropleth_TUN.html?raw=true "Time Travel to Nearest Hospital for Tunisia")
