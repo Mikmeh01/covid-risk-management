@@ -44,7 +44,5 @@ Here is an example for Tunisia ( Follow this [link](https://rawcdn.githack.com/M
 
 <p align="center">
 <img src="https://github.com/Mikmeh01/covid-risk-management/blob/master/Viz_Tunisia.png" width="400"/>
- </p>
+</p>
  
-
-
