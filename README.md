@@ -42,6 +42,6 @@ To get a grasp of estimated time arrival to hospitals and their location, choose
 
 Here is an example for Tunisia
 
-![Tunisia_viz](Viz_Tunisia.png =400x "Time Travel to Nearest Hospital for Tunisia")
+![Tunisia_viz](Viz_Tunisia.png =400x)
 
 
