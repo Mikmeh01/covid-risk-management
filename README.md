@@ -21,7 +21,8 @@ and then run from `src` directory
 $ python make_geodataframe.py --config=path_to_config --o=output_name
 ```
 
-Here is an example of **[Interactive Map]**(https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html) for Tunisia that can be generated
+Here is an example of **[Interactive Map](https://rawcdn.githack.com/Mikmeh01/covid-risk-management/d1452b1c3e63f90215ca4be850747224e3877a4c/chloropeth_TUN.html)** for Tunisia that can be generated
+
 ## Installation
 Code implemented in Python 3.6
 
