@@ -46,6 +46,9 @@ def main(argv):
     # gpd.sjoin(gdf, country_shp, op='within')[gdf.columns].to_file(os.path.join(output_path, 'origins.shp'))
     gdf.to_file(os.path.join(output_path, FLAGS.o))
 
+    # Make and export map
+    utils.make_map(gdf,hospitals,output_path,FLAGS.o)
+
 
 if __name__ == '__main__':
     flags.DEFINE_string('config', './config.json', "configuration file to load")
