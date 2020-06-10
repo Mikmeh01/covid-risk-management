@@ -52,7 +52,7 @@ Datasets:
 
 ## Vizualisation
 
-To get a grasp of estimated time arrival to hospitals and their location, choose the country and run the "make_viz" notebook and choose the map that suits best your work
+The vizualisation will automaticaly be created as an Interactive Map from the make_geodataframe python file. Here is an example of screenshot for Tunisia (the interactive map can be found in the Getting Started Section)
 
 <p align="center">
 <img src="https://github.com/Mikmeh01/covid-risk-management/blob/master/Viz_Tunisia.png" width="500"/>
